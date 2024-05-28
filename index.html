@@ -1,0 +1,3623 @@
+<!doctype html>
+<html lang="en" class="dark scrollbar-hide">
+  <head>
+    <title>G-chan.app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i.ibb.co/486vxhK/icon128.png"
+    />
+
+    <!-- DARK MODE -->
+    <script>
+      // Check if dark mode should be enabled
+      if (localStorage.getItem("darkMode") === "enabled") {
+        document.documentElement.classList.add("dark");
+      } else if (localStorage.getItem("darkMode") === "disabled") {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+    
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PP3258SPKZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PP3258SPKZ");
+    </script>
+    <!-- Google tag (gtag.js) -->
+
+    
+    <!-- DARK MODE -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="G-chan is an Anime HomePage Website made by PausePLayed"
+    />
+    <meta
+      name="keywords"
+      content="Gchan, Gchanapp ,G-chan,G-chan app, Chrome-chan, G-chan in, Google Anime, Anime, Waifu"
+    />
+    <meta name="author" content="PausePlayed" />
+    <meta name="robots" context="max-image-preview:large" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@pauseplayed" />
+    <meta name="twitter:title" content="G-chan.app" />
+    <meta
+      name="twitter:description"
+      content="G-chan is an Anime HomePage Website made by PausePLayed"
+    />
+    <meta name="twitter:image" content="https://i.imgur.com/iQH1RgJ.jpg" />
+
+    <meta property="og:url" content="https://twitter.com/PausePLayed" />
+    <meta property="og:type" content="G-chan.app" />
+    <meta property="og:title" content="G-chan.app" />
+    <meta
+      property="og:description"
+      content="G-chan is an Anime HomePage Website made by PausePLayed"
+    />
+    <meta property="og:image" content="https://i.imgur.com/iQH1RgJ.jpg" />
+    <meta
+      name="dmca-site-verification"
+      content="d0k3ZGU0MGtrcldiQ0tkdjBIVG5sUT090"
+    />
+    <link rel="canonical" href="https://g-chan.app" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.14.0/Sortable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+
+    <title>G-chan.app</title>
+    <!-- ADS1 -->
+    <!-- <script
+      type="text/javascript"
+      src="//pl22767420.profitablegatecpm.com/a5/bb/92/a5bb92ab722d6db8653d8080b734379b.js"
+    ></script> -->
+    <!-- ADS1 -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1280347383893734"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" crossorigin src="./entry/main-2133e7d2.js"></script>
+    <link rel="stylesheet" href="./css/index-d6821cd7.css">
+  </head>
+  <!-- <body
+    class="relative bg-neutral-400 dark:bg-neutral-700 scrollbar-hide no_highlights overscroll-none flex flex-col items-center"
+  > -->
+  <body
+    class="relative bg-neutral-400 dark:bg-neutral-700 scrollbar-hide no_highlights overscroll-none"
+  >
+    <!-- ADD MODAL -->
+    <div
+      id="add-modal"
+      class="overflow-y-auto invisible absolute flex top-0 right-0 left-0 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full z-50"
+    >
+      <div class="relative p-4 w-full max-w-md max-h-full">
+        <div
+          class="relative rounded-[30px] shadow bg-white/20 dark:bg-neutral-900/20 backdrop-blur-md scrollbar-hide drop-shadow-lg dark:drop-shadow-lg"
+        >
+          <button
+            onclick="addmodal()"
+            type="button"
+            class="absolute top-3 end-2.5 text-sm w-12 h-12 ms-auto inline-flex justify-center items-center hover:drop-shadow-lg bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-800 hover:bg-neutral-100 dark:text-white text-neutral-900 hover:text-neutral-900 dark:hover:text-white rounded-full"
+          >
+            <svg
+              class="w-[20px] h-[20px]"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+              />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+          <div class="p-4 md:p-5 text-center">
+            <svg
+              class="mx-auto mb-4 dark:text-neutral-100 text-neutral-900 w-10 h-10"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 22 22"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"
+              />
+            </svg>
+            <h3
+              id="addTXT"
+              class="mb-5 text-lg font-bold text-neutral-900 dark:text-neutral-300"
+            >
+              Add shortcut
+            </h3>
+            <h3 id="addWRN" class="hidden mb-5 text-lg font-bold text-red-600">
+              Enter valid URL
+            </h3>
+            <div class="relative">
+              <input
+                type="url"
+                id="bookmarkUrl"
+                placeholder="Enter weebsite URL"
+                spellcheck="false"
+                class="w-full p-2 mb-4 cursor-text rounded-full pl-4 pr-4 hover:ease-in focus:ease-in duration-0 dark:bg-neutral-800 bg-neutral-200 dark:hover:bg-neutral-600 hover:bg-neutral-50 dark:focus:bg-neutral-600 focus:bg-neutral-0 dark:text-neutral-50 text-neutral-950 hover:drop-shadow-lg hover:outline-none focus:drop-shadow-lg focus:outline-none placeholder-neutral-400 dark:placeholder-neutral-400"
+              />
+              <button
+                id="addclearButton"
+                class="absolute p-1 right-0 top-0 mt-1 mr-1.5 rounded-full hover:drop-shadow-lg bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-800 hover:bg-neutral-100 dark:text-white text-neutral-900 hover:text-neutral-900 dark:hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="h-6 w-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <button
+              id="addBookmark"
+              type="button"
+              class="py-2.5 px-5 ms-3 text-sm font-semibold rounded-full hover:drop-shadow-lg bg-neutral-200 dark:bg-neutral-800 text-neutral-900 transition duration-75 hover:bg-neutral-50 dark:text-white dark:hover:bg-neutral-950"
+            >
+              Save
+            </button>
+            <button
+              onclick="addmodal()"
+              type="button"
+              class="py-2.5 px-5 ms-3 text-sm font-semibold rounded-full hover:drop-shadow-lg bg-white/20 dark:bg-neutral-800/20 text-neutral-900 transition duration-75 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ADD MODAL -->
+
+    <!-- EDIT MODAL -->
+    <div
+      id="edit-modal"
+      class="overflow-y-auto invisible absolute flex top-0 right-0 left-0 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full z-50"
+    >
+      <div class="relative p-4 w-full max-w-md max-h-full">
+        <div
+          class="relative rounded-[30px] shadow bg-white/20 dark:bg-neutral-900/20 backdrop-blur-md scrollbar-hide drop-shadow-lg dark:drop-shadow-lg"
+        >
+          <button
+            onclick="editmodal()"
+            type="button"
+            class="absolute top-3 end-2.5 text-sm w-12 h-12 ms-auto inline-flex justify-center items-center hover:drop-shadow-lg bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-800 hover:bg-neutral-100 dark:text-white text-neutral-900 hover:text-neutral-900 dark:hover:text-white rounded-full"
+          >
+            <svg
+              class="w-[20px] h-[20px]"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+              />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+          <div class="p-4 md:p-5 text-center">
+            <svg
+              class="mx-auto mb-4 w-12 h-12 dark:text-neutral-100 text-neutral-900"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20,16v4a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V6A2,2,0,0,1,4,4H8"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+              <polygon
+                fill="none"
+                points="12.5 15.8 22 6.2 17.8 2 8.3 11.5 8 16 12.5 15.8"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></polygon>
+            </svg>
+            <h3
+              id="editTXT"
+              class="mb-5 text-lg font-bold text-neutral-900 dark:text-neutral-300"
+            >
+              Edit shortcut
+            </h3>
+            <h3 id="editWRN" class="hidden mb-5 text-lg font-bold text-red-600">
+              Enter valid URL
+            </h3>
+            <div class="relative">
+              <input
+                type="url"
+                id="editbookmarkUrl"
+                placeholder="Enter website URL"
+                spellcheck="false"
+                class="w-full p-2 mb-4 cursor-text rounded-full pl-4 pr-4 hover:ease-in focus:ease-in duration-0 dark:bg-neutral-800 bg-neutral-200 dark:hover:bg-neutral-600 hover:bg-neutral-50 dark:focus:bg-neutral-600 focus:bg-neutral-0 dark:text-neutral-50 text-neutral-950 hover:drop-shadow-lg hover:outline-none focus:drop-shadow-lg focus:outline-none placeholder-neutral-400"
+              />
+              <button
+                id="editClearButton"
+                class="absolute p-1 right-0 top-0 mt-1 mr-1.5 rounded-full hover:drop-shadow-lg bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-800 hover:bg-neutral-100 dark:text-white text-neutral-900 hover:text-neutral-900 dark:hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="h-6 w-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <button
+              id="saveBookmark"
+              type="button"
+              class="py-2.5 px-5 ms-3 text-sm font-semibold rounded-full hover:drop-shadow-lg bg-neutral-200 dark:bg-neutral-800 text-neutral-900 transition duration-75 hover:bg-neutral-50 dark:text-white dark:hover:bg-neutral-950"
+            >
+              Save
+            </button>
+            <button
+              onclick="editmodal()"
+              type="button"
+              class="py-2.5 px-5 ms-3 text-sm font-semibold rounded-full hover:drop-shadow-lg bg-white/20 dark:bg-neutral-800/20 text-neutral-900 transition duration-75 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- EDIT MODAL -->
+
+    <!-- TAP MODAL -->
+    <div
+      id="tap-modal"
+      class="overflow-y-auto invisible absolute flex top-0 right-0 left-0 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full z-50"
+    >
+      <div class="relative p-4 w-full max-w-md max-h-full">
+        <div
+          class="relative rounded-[30px] shadow bg-white/20 dark:bg-neutral-900/20 backdrop-blur-md scrollbar-hide drop-shadow-lg dark:drop-shadow-lg"
+        >
+          <!-- 
+            onclick="window.open('https://www.profitablegatecpm.com/akg1b6y07?key=9c1c100035ca0684b627d70f16baae77', '_blank'); location.reload();" -->
+          <button
+            id="addB1"
+            onclick="tapmodal();"
+            type="button"
+            class="absolute top-3 end-2.5 text-sm w-12 h-12 ms-auto inline-flex justify-center items-center hover:drop-shadow-lg bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-800 hover:bg-neutral-100 dark:text-white text-neutral-900 hover:text-neutral-900 dark:hover:text-white rounded-full"
+          >
+            <svg
+              class="w-[20px] h-[20px]"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+              />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+          <div class="p-4 md:p-5 text-center">
+            <button
+              id="tapTXT"
+              class="py-2 px-5 ms-3 text-6xl font-bold hover:drop-shadow-lg rounded-full overflow-hidden relative"
+              style="
+                background: linear-gradient(
+                  to right,
+                  orange 0%,
+                  pink 50%,
+                  red 100%
+                );
+                -webkit-background-clip: text;
+                color: transparent;
+              "
+            >
+              <div
+                class="absolute inset-0 bg-white opacity-50"
+                style="mix-blend-mode: difference"
+              ></div>
+            </button>
+            <h3
+              class="mb-1 text-lg font-bold text-neutral-900 dark:text-neutral-300"
+            >
+              Taps on Waifu!
+            </h3>
+
+            <h3 class="mb-1 text-lg text-neutral-900 dark:text-neutral-300">
+              Enjoying G-chan?
+            </h3>
+            <h3 class="mb-5 text-lg text-neutral-900 dark:text-neutral-300">
+              Support and Follow me on:
+            </h3>
+            <div id="linkExclusive" class="max-w-[200px] mx-auto mb-5">
+              <div class="grid grid-cols-2 gap-2">
+                <div
+                  class="group relative font-bold flex flex-col items-center p-1 rounded-md bg-white/0 cursor-pointer transition duration-75 text-neutral-900 dark:text-white dark:hover:bg-neutral-800 hover:bg-neutral-200 text-center"
+                >
+                  <a
+                    href="https://patreon.com/pauseplayed"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="https://static-00.iconduck.com/assets.00/patreon-icon-2048x2048-f80b89j2.png"
+                      alt="PP"
+                      class="w-16 h-16 rounded-full"
+                    />
+                    <p>Patreon</p>
+                  </a>
+                </div>
+                <div
+                  class="group relative font-bold flex flex-col items-center p-1 rounded-md bg-white/0 cursor-pointer transition duration-75 text-neutral-900 dark:text-white dark:hover:bg-neutral-800 hover:bg-neutral-200 text-center"
+                >
+                  <a
+                    href="https://twitter.com/PausePLayed"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="https://pbs.twimg.com/profile_images/1723151525076426752/LtJFTuQA_400x400.jpg"
+                      alt="Twitter"
+                      class="w-16 h-16 rounded-full"
+                    />
+                    <p>Twitter</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="tapmodal();"
+              id="tapButton"
+              type="button"
+              class="py-2.5 px-5 ms-3 text-sm font-medium rounded-full bg-neutral-200 dark:bg-neutral-800 text-neutral-900 transition duration-75 hover:bg-gradient-to-r hover:from-orange-200 hover:via-pink-300 hover:to-red-500 dark:text-white dark:hover:bg-neutral-950 hover:font-black"
+            >
+              Sure
+            </button>
+            <!--               onclick="window.open('https://www.profitablegatecpm.com/vguz9c2hv?key=73aafa606ad07a8edb5cdb7bdc389d7c', '_blank'); location.reload();" -->
+            <button
+              id="addC1"
+              onclick="window.open('https://www.profitablegatecpm.com/vguz9c2hv?key=73aafa606ad07a8edb5cdb7bdc389d7c', '_blank');location.reload();"
+              type="button"
+              class="py-2.5 px-5 ms-3 text-sm font-medium rounded-full hover:drop-shadow-lg bg-white/20 dark:bg-neutral-800/20 text-neutral-900 transition duration-75 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+            >
+              👉👈
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TAP MODAL -->
+    <div
+      class="flex justify-center items-center w-auto flex-col focus:outline-none"
+    >
+      <!-- sm:pb-[500px] md:pb-[300px] xl:pb-[300px]  -->
+
+      <!-- DIV1 -->
+      <div id="div1">
+        <div
+          id="wrapper"
+          class="bg-center relative flex justify-items-center z-1 h-[500px] w-auto md:-mt-[60px]"
+        >
+          <!-- bg-red-600 -->
+          <div
+            id="backgroundcontainer"
+            class="justify-items-center bg-bottom 1xl:mt-[70px] md:mt-[35px] sm:mb-[10px] md:w-screen md:h-[550px] sm:w-screen sm:max-h-[392.5px]"
+          >
+            <!-- md:bg-contain sm: -->
+            <div
+              id="background"
+              class="bg-bottom h-full bg-no-repeat bg-contain"
+            ></div>
+
+            <div
+              id="hidebackground"
+              class="absolute hidden inset-0 z-0 dark:bg-neutral-700/10 bg-neutral-400/10 text-neutral-200 dark:text-neutral-800 -mb-[100px] backdrop-blur pointer-events-auto"
+            >
+              <div
+                class="absolute z-0 md:pt-[140px] sm:pt-[100px] sm:w-[120px] sm:left-0 sm:right-0 sm:mx-auto md:w-[120px] md:mx-auto md:left-0 md:right-0 md:scale-[4] sm:scale-[2.8] drop-shadow-md pointer-events-auto"
+              >
+                <svg
+                  version="1.0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="120"
+                  height="60"
+                  viewBox="0 0 2160 720"
+                  preserveAspectRatio="xMidYMid meet"
+                  fill="white"
+                >
+                  <!-- fill="#F56565" -->
+                  <g
+                    transform="translate(0.000000,900.000000) scale(0.03800000,-0.03800000)"
+                    stroke="none"
+                  >
+                    <path
+                      d="M7165 18580 c-1308 -89 -2421 -459 -3450 -1147 -607 -406 -1198 -950
+-1664 -1533 -786 -982 -1261 -2137 -1410 -3430 -40 -351 -46 -474 -46 -965 0
+-475 5 -581 41 -910 171 -1561 788 -2880 1859 -3974 1030 -1052 2217 -1695
+3635 -1970 448 -87 859 -127 1390 -137 1635 -32 3096 302 4236 968 474 276
+961 661 1308 1033 l106 113 0 2326 0 2326 -1150 0 -1150 0 -2 -1867 -3 -1867
+-130 -78 c-633 -378 -1421 -624 -2285 -712 -429 -44 -1083 -47 -1410 -7 -975
+120 -1760 465 -2493 1096 -445 383 -796 829 -1051 1335 -265 527 -409 1041
+-483 1725 -22 205 -25 927 -5 1135 119 1214 556 2164 1348 2930 619 599 1343
+1001 2168 1205 980 243 2262 197 3205 -114 502 -165 1033 -471 1510 -870 40
+-34 77 -61 81 -61 11 0 1222 1729 1224 1746 3 32 -440 375 -734 570 -977 645
+-2062 1003 -3400 1120 -215 19 -1036 28 -1245 14z"
+                    />
+                    <path
+                      d="M45170 11420 l0 -6740 1010 0 1010 0 0 6740 0 6740 -1010 0 -1010 0
+0 -6740z"
+                    />
+                    <path
+                      d="M39735 13529 c-1134 -56 -2103 -477 -2877 -1252 -225 -226 -386 -421
+-546 -663 -378 -574 -599 -1233 -662 -1974 -18 -210 -24 -774 -11 -1035 33
+-682 161 -1209 426 -1750 283 -578 705 -1088 1260 -1521 551 -430 1196 -711
+1902 -828 292 -49 341 -51 1008 -51 689 0 735 3 1100 65 162 28 512 111 603
+144 l42 15 0 -1077 0 -1077 -118 -67 c-310 -176 -599 -282 -977 -357 -303 -61
+-609 -88 -790 -71 -498 46 -924 194 -1315 455 -514 343 -881 799 -1075 1340
+-18 50 -37 90 -42 90 -5 0 -415 -175 -911 -390 -816 -353 -901 -392 -896 -410
+48 -161 212 -528 325 -728 415 -730 1140 -1390 1907 -1737 640 -289 1229 -400
+2122 -400 755 0 1321 69 1825 221 661 201 1161 492 1628 948 l137 134 -1 1606
+c-1 883 -4 1746 -8 1916 l-6 310 -176 250 c-179 255 -1023 1462 -1066 1525
+-13 19 -26 36 -28 38 -2 2 -52 -39 -112 -91 -384 -337 -650 -513 -983 -650
+-371 -153 -945 -237 -1315 -193 -667 80 -1205 324 -1699 771 -242 219 -490
+561 -622 855 -180 403 -285 923 -254 1261 85 942 497 1652 1250 2154 391 261
+817 409 1315 455 299 28 855 -58 1245 -192 203 -70 334 -129 522 -236 l118
+-67 2 -1155 3 -1155 908 -3 907 -2 0 1643 0 1644 -137 134 c-206 201 -366 330
+-588 474 -559 363 -1214 578 -2010 659 -319 33 -935 45 -1330 25z"
+                    />
+                    <path
+                      d="M52225 13529 c-996 -49 -1864 -379 -2585 -983 -284 -239 -541 -512
+-744 -795 -416 -576 -662 -1237 -746 -2001 -39 -355 -38 -1114 1 -1475 106
+-973 493 -1802 1164 -2494 676 -696 1477 -1121 2405 -1275 288 -48 339 -51
+1005 -51 545 0 650 2 780 18 472 57 923 171 1285 324 448 190 870 463 1186
+765 104 101 104 101 86 122 -11 12 -68 93 -127 181 -100 148 -909 1309 -926
+1329 -4 4 -65 -42 -136 -104 -366 -321 -660 -512 -979 -639 -384 -152 -932
+-231 -1299 -187 -498 60 -928 214 -1312 469 -173 115 -273 197 -437 357 -237
+232 -381 426 -526 715 -171 337 -262 672 -300 1095 -30 339 80 882 257 1263
+148 319 308 543 574 802 425 414 928 671 1496 765 217 35 340 43 506 30 579
+-44 1080 -187 1499 -428 l118 -67 2 -1155 3 -1155 908 -3 907 -2 0 1643 0
+1642 -132 131 c-665 658 -1506 1026 -2603 1138 -319 33 -935 45 -1330 25z"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- <div
+            id="background"
+            class="bg-bottom bg-no-repeat bg-contain md:h-[500px] md:w-[500px] sm:w-screen mx-auto ease-out duration-300"
+            style="visibility: hidden"
+          ></div> -->
+
+          <div
+            id="preloader"
+            class="absolute inset-0 items-center justify-center md:-mb-[200px]"
+          >
+            <div
+              class="absolute top-1/2 left-1/2 md:mt-[50px] -ml-2 h-8 w-4 scale-[2.5] text-neutral-200 dark:text-neutral-800 drop-shadow-md"
+            >
+              <div class="absolute z-10 -ml-2 h-8 w-8 animate-bounce">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="animate-spin"
+                  fill="currentColor"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zM8 4c2.209 0 4 1.791 4 4s-1.791 4-4 4-4-1.791-4-4 1.791-4 4-4zM12.773 12.773c-1.275 1.275-2.97 1.977-4.773 1.977s-3.498-0.702-4.773-1.977-1.977-2.97-1.977-4.773c0-1.803 0.702-3.498 1.977-4.773l1.061 1.061c0 0 0 0 0 0-2.047 2.047-2.047 5.378 0 7.425 0.992 0.992 2.31 1.538 3.712 1.538s2.721-0.546 3.712-1.538c2.047-2.047 2.047-5.378 0-7.425l1.061-1.061c1.275 1.275 1.977 2.97 1.977 4.773s-0.702 3.498-1.977 4.773z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="absolute top-4 h-5 w-4 animate-bounce border-l-2 drop-shadow-lg border-neutral-500 dark:border-neutral-900"
+                style="rotate: -90deg"
+              ></div>
+              <div
+                class="absolute top-4 h-5 w-4 animate-bounce border-r-2 drop-shadow-lg border-neutral-500 dark:border-neutral-900"
+                style="rotate: 90deg"
+              ></div>
+            </div>
+          </div>
+          <!-- onclick="toggleRefresh()" -->
+          <div
+            id="changeBGbutton"
+            class="z-10 absolute flex items-center justify-center md:h-[600px] md:w-screen sm:h-[400px] sm:w-screen cursor-pointer md:mx-auto"
+          ></div>
+          <!--BG IMPLEMENT-->
+        </div>
+      </div>
+
+      <!-- DIV2 -->
+      <div>
+        <div
+          id="div2"
+          class="absolute z-10 flex items-center justify-center sm:-pt-[10px] md:pt-[166px] 1xl:mt-[35px] pointer-events-none"
+          style="left: 0; right: 0"
+        >
+          <div
+            class="absolute grid grid-rows-5 gap-[8px] sm:w-screen md:w-[650px] sm:left-0 sm:pb-[50px] pointer-events-none"
+          >
+            <div class="flex right-0 h-[50px] w-[0px] pointer-events-auto">
+              <button
+                id="heartRandom"
+                onclick="toggleStopRandom()"
+                type="button"
+                class="absolute z-20 pt-[2.5px] pl-[2px] sm:-right-[0] md:right-0 h-[52px] w-[52px] hover:ease-out focus:ease-out duration-[300ms] sm:rounded-tl-full sm:rounded-bl-full backdrop-blur md:rounded-full sm:dark:bg-neutral-800/20 sm:bg-neutral-200/20 dark:bg-neutral-800/20 bg-neutral-200/20 hover:bg-neutral-100 dark:hover:bg-neutral-600 dark:text-neutral-900 sm:text-neutral-500 text-neutral-500 hover:text-neutral-900 dark:hover:text-white"
+              >
+                <svg
+                  id="heartSVG"
+                  class="transition-transform duration-500 ease-in-out transform"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 25 25"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.2 9.4c0 1.3.2 3.3 2 5.1 1.6 1.6 6.9 5.2 7.1 5.4.2.1.4.2.6.2s.4-.1.6-.2c.2-.2 5.5-3.7 7.1-5.4 1.8-1.8 2-3.8 2-5.1 0-3-2.4-5.4-5.4-5.4-1.6 0-3.2.9-4.2 2.3-1-1.4-2.6-2.3-4.4-2.3-2.9 0-5.4 2.4-5.4 5.4zm9.8 1c.6 0 1-.4 1-1 0-1.9 1.5-3.4 3.4-3.4s3.4 1.5 3.4 3.4c0 1.1-.2 2.4-1.5 3.7-1.2 1.2-4.9 3.8-6.3 4.7v-7.4z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div
+              id="searchbar"
+              class="sm:flex sm:mt-[0px] md:mt-[0px] md:w-[650px] pointer-events-auto"
+            >
+              <!-- md:max-w-[600px] -->
+              <form class="relative rounded-full group block">
+                <!--  search-cancel:appearance-none search-cancel search-cancel-hover:bg-neutral-600 search-cancel:cursor-pointer search-cancel:w-6 search-cancel:h-6 search-cancel:bg-[url(/xbutton.svg) -->
+                <div class="absolute">
+                  <input
+                    type="search"
+                    id="searchForm"
+                    name="q"
+                    placeholder=""
+                    spellcheck="false"
+                    class="absolute z-4 sm:w-screen md:w-[650px] h-[52px] cursor-text rounded-full md:pl-16 md:pr-16 sm:pl-14 sm:pr-14 hover:ease-in focus:ease-in duration-0 dark:bg-neutral-800/20 bg-neutral-200/20 dark:hover:bg-neutral-600/20 hover:bg-neutral-50/20 dark:focus:bg-neutral-600/20 focus:bg-neutral-0/20 dark:text-neutral-50 text-neutral-950 hover:drop-shadow-lg hover:outline-none focus:drop-shadow-lg focus:outline-none placeholder-neutral-400 dark:placeholder-neutral-500 search-cancel:appearance-none backdrop-blur bg-noise-md"
+                  />
+                  <div
+                    id="loadSearchBar"
+                    role="progressbar"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="0"
+                    class="absolute invisible -z-[50] h-[52px] cursor-progress rounded-full bg-gradient-to-l from-pink-500 to-orange-500 sm:max-w-screen md:max-w-[650px]"
+                  ></div>
+                  <div
+                    class="absolute -z-[100] sm:w-screen md:w-[650px] h-[52px] cursor-progress rounded-full dark:bg-neutral-800 bg-neutral-200"
+                  >
+                    <datalist id="searchHistory">
+                      <!-- Options will be populated here -->
+                    </datalist>
+                  </div>
+
+                  <button
+                    id="settings-button"
+                    type="button"
+                    class="absolute z-5 pt-1.5 left-2 h-12 w-12 hover:ease-out focus:ease-out duration-[300ms] dark:text-neutral-900 text-neutral-500 bg-transparent hover:text-neutral-900 dark:hover:text-white"
+                  >
+                    <svg
+                      onclick="toggleSlideover()"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="cursor-pointer"
+                      fill="currentColor"
+                      viewBox="0 0 19 19"
+                      data-drawer-target="drawernavi"
+                      data-drawer-show="drawernavi"
+                      aria-controls="drawernavi"
+                      data-drawer-backdrop="false"
+                    >
+                      <path
+                        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+              <button
+                id="searchClearButton"
+                class="absolute z-5 justify-center items-center mt-1 pb-1 pl-2 right-1 h-11 w-11 rounded-full hover:ease-out focus:ease-out duration-[300ms] dark:bg-neutral-900 bg-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-950 dark:text-neutral-500 text-neutral-500 hover:text-neutral-900 dark:hover:text-white"
+              >
+                <!-- Magnifying glass SVG -->
+                <svg
+                  id="searchIcon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 19 19"
+                  stroke="currentColor"
+                  class="h-6 w-6 0"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  ></path>
+                </svg>
+                <!-- 'X' SVG -->
+                <svg
+                  id="clearIcon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 19 19"
+                  stroke="currentColor"
+                  class="h-6 w-6 mb-1 pr-[2px] hidden"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <!-- <div class="cols-span-0"></div> -->
+            <div class="flex h-auto w-[0px] pointer-events-auto">
+              <button
+                id="addButton"
+                onclick="addmodal()"
+                type="button"
+                class="absolute hidden sm:dark:bg-neutral-800/20 sm:bg-neutral-200/20 dark:bg-neutral-800/20 bg-neutral-200/20 backdrop-blur hover:bg-neutral-100 dark:hover:bg-neutral-600 dark:text-neutral-900 text-neutral-500 hover:text-neutral-900 dark:hover:text-white sm:rounded-s-full md:rounded-full text-md p-1.5 right-0 items-center z-20"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"
+                  ></path>
+                </svg>
+                <span class="sr-only">Close menu</span>
+              </button>
+            </div>
+            <div class="flex h-auto w-[0px] pointer-events-auto">
+              <button
+                id="incogButton"
+                onclick="toggleIncogni()"
+                type="button"
+                class="absolute hover:ease-out duration-[300ms] sm:dark:bg-neutral-800/20 sm:bg-neutral-200/20 dark:bg-neutral-800/20 bg-neutral-200/20 backdrop-blur hover:bg-neutral-100 dark:hover:bg-neutral-600 dark:text-neutral-900 text-neutral-500 hover:text-neutral-900 dark:hover:text-white sm:rounded-s-full md:rounded-full text-sm p-1.5 right-0 items-center z-20"
+              >
+                <svg
+                  fill="none"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  transform="matrix(-1, 0, 0, 1, 0, 0)"
+                >
+                  <path
+                    id="Vector"
+                    d="M3.99989 4L19.9999 20M16.4999 16.7559C15.1473 17.4845 13.6185 17.9999 11.9999 17.9999C8.46924 17.9999 5.36624 15.5478 3.5868 13.7788C3.1171 13.3119 2.88229 13.0784 2.7328 12.6201C2.62619 12.2933 2.62616 11.7066 2.7328 11.3797C2.88233 10.9215 3.11763 10.6875 3.58827 10.2197C4.48515 9.32821 5.71801 8.26359 7.17219 7.42676M19.4999 14.6335C19.8329 14.3405 20.138 14.0523 20.4117 13.7803L20.4146 13.7772C20.8832 13.3114 21.1182 13.0779 21.2674 12.6206C21.374 12.2938 21.3738 11.7068 21.2672 11.38C21.1178 10.9219 20.8827 10.6877 20.4133 10.2211C18.6338 8.45208 15.5305 6 11.9999 6C11.6624 6 11.3288 6.02241 10.9999 6.06448M13.3228 13.5C12.9702 13.8112 12.5071 14 11.9999 14C10.8953 14 9.99989 13.1046 9.99989 12C9.99989 11.4605 10.2135 10.9711 10.5608 10.6113"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+
+                <span class="sr-only">Share</span>
+              </button>
+            </div>
+
+            <div class="flex h-auto w-[0px] pointer-events-auto">
+              <button
+                id="shareButton"
+                onclick="toggleShare()"
+                type="button"
+                class="absolute hover:ease-out duration-[300ms] sm:dark:bg-neutral-800/20 sm:bg-neutral-200/20 dark:bg-neutral-800/20 bg-neutral-200/20 backdrop-blur hover:bg-neutral-100 dark:hover:bg-neutral-600 dark:text-neutral-900 text-neutral-500 hover:text-neutral-900 dark:hover:text-white sm:rounded-s-full md:rounded-full text-sm p-1.5 right-0 items-center z-20"
+              >
+                <svg
+                  id="shareSVG"
+                  class="transition-transform duration-500 ease-in-out transform"
+                  fill="currentColor"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.707,11.293l-8-8A.99991.99991,0,0,0,12,4V7.54492A11.01525,11.01525,0,0,0,2,18.5V20a1,1,0,0,0,1.78418.62061,11.45625,11.45625,0,0,1,7.88672-4.04932c.0498-.00635.1748-.01611.3291-.02588V20a.99991.99991,0,0,0,1.707.707l8-8A.99962.99962,0,0,0,21.707,11.293ZM14,17.58594V15.5a.99974.99974,0,0,0-1-1c-.25488,0-1.2959.04932-1.56152.085A14.00507,14.00507,0,0,0,4.05176,17.5332,9.01266,9.01266,0,0,1,13,9.5a.99974.99974,0,0,0,1-1V6.41406L19.58594,12Z"
+                  ></path>
+                </svg>
+
+                <span class="sr-only">Share</span>
+              </button>
+              <div
+                id="shareIcons"
+                class="hidden absolute flex flex-row gap-2 right-[60px] transition-all duration-500 ease-in-out sm:dark:bg-neutral-900/20 sm:bg-neutral-100/20 dark:bg-neutral-900/20 bg-neutral-100/20 backdrop-blur rounded-full p-1 -mt-1"
+              >
+                <!-- REDDIT -->
+                <a
+                  data-pin-do="buttonPin"
+                  data-pin-config="none"
+                  class="pi-h rounded-full w-12 h-12 p-2 cursor-pointer hover:scale-[1.2] hover:ease-in-out duration-[300ms] bg-orange-600 text-white"
+                  onclick="reddit_click()"
+                >
+                  <svg
+                    fill="#fff"
+                    viewBox="0 0 256 256"
+                    id="Flat"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M248,104a31.99228,31.99228,0,0,0-52.9375-24.19043c-16.75439-8.90112-36.76172-14.279-57.666-15.52539l5.19581-31.17578,21.83105,3.3584a24.00409,24.00409,0,1,0,2.43506-15.814l-29.64209-4.56006a7.996,7.996,0,0,0-9.10742,6.5918l-6.91309,41.478c-21.83887.94165-42.813,6.37891-60.2583,15.647a31.99266,31.99266,0,0,0-42.59229,47.74024A59.04669,59.04669,0,0,0,16,144c0,21.93457,12.042,42.35156,33.90723,57.48926C70.875,216.00588,98.60938,224,128,224s57.125-7.99414,78.09277-22.51074C227.958,186.35158,240,165.93459,240,144a59.01726,59.01726,0,0,0-2.3457-16.44922A32.17163,32.17163,0,0,0,248,104ZM72,132a16,16,0,1,1,16,16A16.01833,16.01833,0,0,1,72,132Zm92.69629,51.10938a80.122,80.122,0,0,1-73.39209,0,8,8,0,0,1,7.34033-14.2168,64.09433,64.09433,0,0,0,58.71094,0,8.00008,8.00008,0,0,1,7.34082,14.2168ZM168,148a16,16,0,1,1,16-16A16.01833,16.01833,0,0,1,168,148Z"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+                <!-- FACEBOOK -->
+                <a
+                  data-pin-do="buttonPin"
+                  data-pin-config="none"
+                  class="pi-h rounded-full w-12 h-12 p-2 cursor-pointer hover:scale-[1.2] hover:ease-in-out duration-[300ms] bg-blue-500 text-white"
+                  onclick="facebook_click()"
+                >
+                  <svg
+                    class="w-full h-full"
+                    viewBox="2 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#fff"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <rect x="0" fill="none" width="20" height="20"></rect>
+                      <g>
+                        <path
+                          d="M8.46 18h2.93v-7.3h2.45l.37-2.84h-2.82V6.04c0-.82.23-1.38 1.41-1.38h1.51V2.11c-.26-.03-1.15-.11-2.19-.11-2.18 0-3.66 1.33-3.66 3.76v2.1H6v2.84h2.46V18z"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+
+                <!-- TWITTER -->
+                <a
+                  data-pin-do="buttonPin"
+                  data-pin-config="none"
+                  class="pi-h rounded-full w-12 h-12 p-2 cursor-pointer hover:scale-[1.2] hover:ease-in-out duration-[300ms] bg-sky-500 text-white"
+                  onclick="twitter_click()"
+                >
+                  <svg
+                    class="w-full h-full"
+                    fill="currentColor"
+                    viewBox="-3 2 26 26"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title>twitter</title>
+                      <path
+                        d="M24 8.531c-0.688 1-1.5 1.844-2.469 2.563 0.031 0.219 0.031 0.438 0.031 0.656 0 6.5-4.938 14-14 14-2.781 0-5.375-0.844-7.563-2.219 0.375 0.031 0.781 0.094 1.188 0.094 2.313 0 4.406-0.813 6.094-2.125-2.188-0.031-3.969-1.5-4.594-3.438 0.281 0.063 0.625 0.094 0.938 0.094 0.438 0 0.906-0.063 1.313-0.188-2.281-0.438-3.969-2.406-3.969-4.781v-0.063c0.688 0.344 1.406 0.563 2.219 0.594-1.313-0.906-2.188-2.406-2.188-4.094 0-0.906 0.25-1.75 0.656-2.5 2.438 2.969 6.063 4.969 10.156 5.156-0.063-0.344-0.125-0.75-0.125-1.125 0-2.719 2.188-4.938 4.906-4.938 1.438 0 2.719 0.625 3.625 1.594 1.125-0.219 2.156-0.656 3.094-1.219-0.344 1.156-1.125 2.156-2.125 2.75 1-0.125 1.906-0.406 2.813-0.813z"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+
+                <!-- DISCORD -->
+                <a
+                  class="pi-h rounded-full w-12 h-12 p-2 cursor-pointer hover:scale-[1.2] hover:ease-in-out duration-[300ms] bg-indigo-600 text-white"
+                  href="https://discord.com/channels/@me"
+                  target="_blank"
+                  onclick="discord_click()"
+                >
+                  <svg
+                    viewBox="0 -28.5 256 256"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    preserveAspectRatio="xMidYMid"
+                    fill="currentColor"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g>
+                        <path
+                          d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z"
+                          fill="#FFF"
+                          fill-rule="nonzero"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+
+                <!-- COPYLINK -->
+                <a
+                  id="copyButton"
+                  data-pin-do="buttonPin"
+                  data-pin-config="none"
+                  class="pi-h rounded-full w-12 h-12 cursor-pointer hover:scale-[1.2] hover:ease-in-out duration-[300ms] dark:bg-neutral-900 bg-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-950 focus:bg-neutral-100 dark:focus:bg-neutral-950 dark:text-neutral-400 text-neutral-500 hover:text-neutral-900 dark:hover:text-white"
+                  onclick="copy_click()"
+                >
+                  <svg
+                    id="linkSVG"
+                    class="w-10 h-10"
+                    viewBox="-2.5 -2.5 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="Vector"
+                      d="M9.1718 14.8288L14.8287 9.17192M7.05086 11.293L5.63664 12.7072C4.07455 14.2693 4.07409 16.8022 5.63619 18.3643C7.19829 19.9264 9.7317 19.9259 11.2938 18.3638L12.7065 16.9498M11.2929 7.05L12.7071 5.63579C14.2692 4.07369 16.8016 4.07397 18.3637 5.63607C19.9258 7.19816 19.9257 9.73085 18.3636 11.2929L16.9501 12.7071"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                  <p
+                    id="copyTXT"
+                    class="hidden text-sm font-bold mt-[13px] ml-[-5] dark:bg-neutral-700 bg-neutral-300 rounded-full px-1 flex items-center justify-center overflow-clip"
+                  >
+                    Copy
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- DIV3 -->
+      <div
+        id="div3"
+        class="hidden sm:z-5 sm:absolute relative sm:pt-[600px] md:pt-[126px] 1xl:mt-[35px] pointer-events-auto"
+      >
+        <div
+          class="flex-grow bottom-0 md:px-[20px] sm:pr-[35px] overflow-y-auto bg-center sm:max-h-[200px] md:max-h-[200px] sm:w-full md:w-[650px] scrollbar-hide"
+        >
+          <div
+            class="flex-grow items-center justify-center transition-all duration-200 ease-in-out"
+          >
+            <div
+              id="bookmarks"
+              class="transition-all duration-200 ease-in-out grid items-center justify-center sm:grid-cols-3 sm:gap-1 md:grid-cols-6 md:gap-2 mt-4"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <!-- BOOKMARKS -->
+
+      <!-- BOOKMARKS -->
+    </div>
+
+    <!-- drawer component -->
+    <div class="flex" id="accordion-open" data-accordion="open">
+      <!-- class="fixed -->
+      <div
+        id="slideover-container"
+        class="w-full h-full z-30 fixed inset-0 invisible cursor-pointer"
+      >
+        <div
+          onclick="toggleSlideover()"
+          id="slideover-bg"
+          class="absolute bg-neutral-900/20 dark:bg-neutral-900/10 inset-0 z-30"
+          data-drawer-hide="drawernavi"
+          aria-controls="drawernavi"
+        ></div>
+      </div>
+      <!-- sm:h-[100%] md:h-[100%] -->
+      <div
+        id="drawernavi"
+        class="fixed top-0 h-screen xl:left-[250px] 1xl:left-[500px] 2xl:left-[720px] rounded-[30px] z-40 sm:p-2 sm:pb-[25px] md:p-4 sm:w-4/5 md:w-[350px] overflow-y-auto transition-transform ease-out duration-[400ms] -translate-x-full -translate-y-full bg-white/20 dark:bg-neutral-900/20 backdrop-blur-md scrollbar-hide drop-shadow-lg dark:drop-shadow-lg"
+        tabindex="1"
+        aria-labelledby="drawernavi-label"
+      >
+        <!-- <div
+        id="drawernavi"
+        class="fixed bottom-0 h-screen rounded-[30px] z-40 sm:p-2 sm:pb-[25px] md:p-4 sm:w-4/5 md:w-[350px] overflow-y-auto transition-transform ease-out duration-[400ms] translate-y-full bg-white/20 dark:bg-neutral-900/20 backdrop-blur-md scrollbar-hide drop-shadow-lg dark:drop-shadow-lg"
+        tabindex="1"
+        aria-labelledby="drawernavi-label"
+      > -->
+
+        <h5
+          id="drawernavi-label"
+          class="ml-8 text-2xl font-black drop-shadow-sm"
+        >
+          <br />
+          <span
+            class="dark:text-neutral-900 text-neutral-600 bg-neutral-300/20 rounded-full px-1"
+            >G-chan</span
+          ><span
+            class="dark:text-neutral-300 text-neutral-100 bg-neutral-500/20 rounded-full px-1"
+            >.app</span
+          >
+          <br />
+        </h5>
+
+        <button
+          id="closeNavi"
+          onclick="toggleSlideover()"
+          type="button"
+          data-drawer-hide="drawernavi"
+          aria-controls="drawernavi"
+          class="absolute bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-800 hover:bg-neutral-100 dark:text-white text-neutral-900 hover:text-neutral-900 dark:hover:text-white rounded-full text-md p-1.5 top-7 sm:right-4 md:right-7 inline-flex items-center z-[50]"
+        >
+          <svg
+            aria-hidden="true"
+            class="w-[40px] h-[40px]"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <span class="sr-only">Close menu</span>
+        </button>
+        <div
+          id="collapseDiv"
+          class="sticky h-0 pointer-events-auto sm:top-[501px] md:top-1/2 sm:float-right sm:mr-[10px] md:ml-[255px] items-center z-10"
+        >
+          <button
+            id="uncollapseButton"
+            onclick="untoggleCollapse()"
+            type="button"
+            class="sticky hidden rotate-180 sm:top-[501px] transform md:-translate-y-1/2 bg-neutral-300/20 dark:bg-neutral-700/20 dark:hover:bg-neutral-800 hover:bg-neutral-100 dark:text-white text-neutral-900 hover:text-neutral-900 dark:hover:text-white backdrop-blur drop-shadow-lg rounded-full text-md p-1.5 z-10"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-[40px] h-[40px] pt-[9px] pl-[6px]"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="rounded-full bg-neutral-300 dark:bg-neutral-700"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+            <!-- <span class="sr-only">Collapse</span> -->
+          </button>
+        </div>
+        <div class="py-4 overflow-y-auto">
+          <ul class="relative space-y-2 font-medium sm:p-2 md:p-4">
+            <!-- FAQS -->
+            <div class="bg-white/20 rounded-[20px] dark:bg-neutral-800/20 z-20">
+              <li>
+                <button
+                  type="button"
+                  class="relative w-full flex items-center p-2 h-11 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+                  aria-controls="dropdownContainer0"
+                  data-collapse-toggle="dropdownContainer0"
+                >
+                  <span class="absolute font-bold left-0 ml-5">FAQs</span>
+                  <span
+                    class="absolute right-0 inset-y-0 mt-2.5 mr-3 inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-black text-neutral-300 bg-neutral-900 rounded-full dark:bg-neutral-100 dark:text-neutral-800"
+                    >?</span
+                  >
+                </button>
+
+                <ul
+                  id="dropdownContainer0"
+                  class="relative hidden mx-2 py-2 space-y-2"
+                >
+                  <li>
+                    <button
+                      type="button"
+                      class="relative w-full flex items-center p-2 h-11 text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+                      aria-controls="dropdown-FAQ1"
+                      data-collapse-toggle="dropdown-FAQ0"
+                    >
+                      <span class="absolute font-bold left-0 ml-5"
+                        >Why do I see ads?</span
+                      >
+                    </button>
+
+                    <ul
+                      id="dropdown-FAQ0"
+                      class="relative hidden py-2 space-y-2"
+                    >
+                      <li
+                        class="w-full text-base text-justify text-neutral-900 transition duration-75 rounded-lg p-[20px] group dark:text-white"
+                      >
+                        <a
+                          id="tldr1"
+                          class="items-center w-[120px] p-1 h-11 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-200 dark:text-white dark:hover:bg-neutral-800 dark:bg-neutral-900 bg-neutral-100"
+                          >TLDR</a
+                        >
+                        <br /><br />
+                        <p id="parLong1" class="visible">
+                          G-chan HomePage is crafted for Anime enthusiasts, and
+                          your go-to Anime HomePage Website.
+                          <br />
+                          <br />
+                          I apologize if ads have disrupted your experience. As
+                          an independent artist, these ads help cover the costs
+                          of maintaining this site. I aim to keep them
+                          unobtrusive and separate from the main content.
+                          <br />
+                          <br />
+                          If you prefer an ad-free experience, consider
+                          supporting my work on
+                          <a
+                            href="https://patreon.com/pauseplayed"
+                            class="items-center w-[120px] p-1 h-11 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-200 dark:text-white dark:hover:bg-neutral-800 dark:bg-neutral-900 bg-neutral-100"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >PATREON</a
+                          >
+                          for a premium version. Your support helps keep this
+                          site running and contributes to new content.
+                          <br />
+                          <br />
+                          Before reviewing, please consider the effort behind
+                          this site. Thank you for understanding!
+                        </p>
+                        <p id="parShort1" class="hidden">
+                          G-chan HomePage, made for Anime fans, uses ads to
+                          maintain the site. For an ad-free experience, consider
+                          supporting on
+                          <a
+                            href="https://patreon.com/pauseplayed"
+                            class="items-center w-[120px] p-1 h-11 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-200 dark:text-white dark:hover:bg-neutral-800 dark:bg-neutral-900 bg-neutral-100"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >PATREON</a
+                          >
+                          for a premium version. Your support helps keep the
+                          site running. Thanks for understanding!
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="relative w-full flex items-center p-2 h-11 text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+                      aria-controls="dropdown-FAQ1"
+                      data-collapse-toggle="dropdown-FAQ1"
+                    >
+                      <span class="absolute font-bold left-0 ml-5"
+                        >How to Install</span
+                      >
+                    </button>
+
+                    <ul
+                      id="dropdown-FAQ1"
+                      class="relative hidden py-2 space-y-2"
+                    >
+                      <li
+                        class="w-full text-base text-justify text-neutral-600 transition duration-75 rounded-lg p-[20px] group dark:text-neutral-400"
+                      >
+                        <p class="font-bold">Phone Installation:</p>
+                        <ul>
+                          <li>
+                            ●Tap/click:
+                            <a
+                              id="copyTipTxt"
+                              onclick="copy_click()"
+                              class="items-center w-[120px] cursor-pointer p-1 h-11 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-200 dark:text-white dark:hover:bg-neutral-800 dark:bg-neutral-900 bg-neutral-100/20"
+                            >
+                              G-chan.app </a
+                            ><br />
+                            link (to copy)
+                          </li>
+                          <li>
+                            ●Open browser homepage: Hold (🏠) located on top
+                            left corner
+                          </li>
+                          <li>●On pop-up: select Edit Homepage</li>
+
+                          <li>●Paste the link</li>
+                        </ul>
+                        <hr class="my-4" />
+                        <p class="font-bold">Desktop Installation:</p>
+                        <ul>
+                          <li>
+                            ●For chrome-based Browsers eg: Brave, Edge or
+                            Chrome:
+                          </li>
+                          <li>
+                            ●Due to age restrictions, sign in to your google
+                            account first before you visit the Chrome Webstore
+                            Link Below
+                          </li>
+                          <li>
+                            ●Visit:
+                            <a
+                              href="https://chromewebstore.google.com/detail/google-anime-waifus/lkpebdhmblffaikggdghmknokfekdlph"
+                              class="items-center w-[120px] p-1 h-11 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-200 dark:text-white dark:hover:bg-neutral-800 dark:bg-neutral-900 bg-neutral-100"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >G-chan Extension</a
+                            >
+                          </li>
+                          <li>●Install Extension</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="relative w-full flex items-center p-2 h-11 text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+                      aria-controls="dropdown-FAQ2"
+                      data-collapse-toggle="dropdown-FAQ2"
+                    >
+                      <span class="absolute font-bold left-0 ml-5"
+                        >How to Uninstall</span
+                      >
+                    </button>
+
+                    <ul
+                      id="dropdown-FAQ2"
+                      class="relative hidden py-2 space-y-2"
+                    >
+                      <li
+                        class="w-full text-base text-justify text-neutral-600 transition duration-75 rounded-lg p-[20px] group dark:text-neutral-400"
+                      >
+                        <p class="font-bold">Phone:</p>
+                        <ul>
+                          <li>
+                            ●Open browser homepage: Hold (🏠) located on top
+                            left corner
+                          </li>
+                          <li>●On pop-up: select Edit Homepage</li>
+                          <li>●Select Default Homepage</li>
+                        </ul>
+                        <hr class="my-4" />
+                        <p class="font-bold">Desktop:</p>
+                        <ul>
+                          <li>●Open settings(☰) on the top-right corner:</li>
+
+                          <li>●Select: Extensions</li>
+                          <li>●Disable or Remove Extension</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- ADS SIDEADD-->
+                  <li class="flex justify-center">
+                    <div
+                      class="cursor-pointer rounded-xl overflow-hidden w-full"
+                    >
+                      <script type="text/javascript">
+                        atOptions = {
+                          key: "2d1e5e3d266285a1bf8cef3242c7972f",
+                          format: "iframe",
+                          height: 286,
+                          width: 286,
+                          params: {},
+                        };
+                        document.write(
+                          "<scr" +
+                            'ipt type="text/javascript" src="//trashyepochabsorbing.com/2d1e5e3d266285a1bf8cef3242c7972f/invoke.js"></scr' +
+                            "ipt>"
+                        );
+                      </script>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="flex items-center w-full p-2 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+                  aria-controls="dropdownContainer8"
+                  data-collapse-toggle="dropdownContainer8"
+                >
+                  <span
+                    class="flex-1 ml-3 text-left whitespace-nowrap font-semibold"
+                    >About</span
+                  >
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 mr-1 z-10"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.54 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"
+                    />
+                  </svg>
+                </button>
+                <ul
+                  id="dropdownContainer8"
+                  class="relative hidden py-2 space-y-2"
+                >
+                  <li
+                    class="w-full text-base text-justify text-neutral-900 transition duration-75 rounded-lg p-[20px] group dark:text-white"
+                  >
+                    <div class="mx-auto max-w-[100px]">
+                      <div
+                        class="group relative flex flex-col items-center p-1 rounded-md bg-white/0 cursor-pointer transition duration-75 text-neutral-900 dark:text-white dark:hover:bg-neutral-800 hover:bg-neutral-200 text-center"
+                      >
+                        <a
+                          href="https://twitter.com/pauseplayed"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src="https://pbs.twimg.com/profile_images/1723151525076426752/LtJFTuQA_400x400.jpg"
+                            alt="PP"
+                            class="w-16 h-16 rounded-full"
+                          />
+                          <p>PP</p>
+                        </a>
+                      </div>
+                    </div>
+                    <hr class="my-4" />
+                    <p>
+                      All animations are manually animated by the developer
+                      itself
+                      <a
+                        href="https://twitter.com/pauseplayed"
+                        class="items-center w-[120px] p-1 h-11 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-200 dark:text-white dark:hover:bg-neutral-800 dark:bg-neutral-900 bg-neutral-100"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >PausePlay</a
+                      >
+                      with the help of these amazing Art Collectors:
+                    </p>
+                    <br />
+                    <div class="grid grid-cols-2 gap-4 max-w-[200px] mx-auto">
+                      <div
+                        class="group relative flex flex-col items-center p-1 rounded-md bg-white/0 cursor-pointer transition duration-75 text-neutral-900 dark:text-white dark:hover:bg-neutral-800 hover:bg-neutral-200 text-center"
+                      >
+                        <a
+                          href="https://twitter.com/robek_world"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src="https://i.ibb.co/wMdRh1T/rwx.webp"
+                            alt="RWX"
+                            class="w-16 h-16 rounded-full"
+                          />
+                          <p>RWX</p>
+                        </a>
+                      </div>
+                      <div
+                        class="group relative flex flex-col items-center p-1 rounded-md bg-white/0 cursor-pointer transition duration-75 text-neutral-900 dark:text-white dark:hover:bg-neutral-800 hover:bg-neutral-200 text-center"
+                      >
+                        <a
+                          href="https://twitter.com/vanaric"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src="https://i.ibb.co/7C2j76b/van.webp"
+                            alt="Vanaric"
+                            class="w-16 h-16 rounded-full"
+                          />
+                          <p>Vanaric</p>
+                        </a>
+                      </div>
+                      <div
+                        class="group relative flex flex-col items-center p-1 rounded-md bg-white/0 cursor-pointer transition duration-75 text-neutral-900 dark:text-white dark:hover:bg-neutral-800 hover:bg-neutral-200 text-center"
+                      >
+                        <a
+                          href="https://twitter.com/PigThePersona"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src="https://i.ibb.co/yWZtfZ8/ran.webp"
+                            alt="Ranbuta"
+                            class="w-16 h-16 rounded-full"
+                          />
+                          <p>Ranbuta</p>
+                        </a>
+                      </div>
+                      <div
+                        class="group relative flex flex-col items-center p-1 rounded-md bg-white/0 cursor-pointer transition duration-75 text-neutral-900 dark:text-white dark:hover:bg-neutral-800 hover:bg-neutral-200 text-center"
+                      >
+                        <a
+                          href="https://twitter.com/Shiomueth"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src="https://i.ibb.co/17FSq7g/shiomu.webp"
+                            alt="Shiomu"
+                            class="w-16 h-16 rounded-full"
+                          />
+                          <p>Shiomu</p>
+                        </a>
+                      </div>
+                    </div>
+
+                    <hr class="my-4" />
+                    <p>
+                      As well as these dedicated people on
+                      <a
+                        href="https://patreon.com/pauseplayed"
+                        class="items-center w-[120px] p-1 h-11 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-200 dark:text-white dark:hover:bg-neutral-800 dark:bg-neutral-900 bg-neutral-100"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >PATREON:</a
+                      >
+                    </p>
+                    <br />
+                    <div class="mx-auto max-w-[100px]">
+                      <div
+                        class="group relative flex flex-col items-center p-1 rounded-md bg-white/0 cursor-pointer transition duration-75 text-neutral-900 dark:text-white dark:hover:bg-neutral-800 hover:bg-neutral-200 text-center"
+                      >
+                        <a
+                          href="https://patreon.com/pauseplayed"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src="https://static-00.iconduck.com/assets.00/patreon-icon-2048x2048-f80b89j2.png"
+                            alt="Patreon"
+                            class="w-16 h-16 rounded-full"
+                          />
+                          <p>Patreon</p>
+                        </a>
+                      </div>
+                    </div>
+                    <br />
+                    <p>
+                      SGTboo23, Uganda LP, iceheart, Alejandro Gomez, Samuel
+                      Pettengill, Ahh_ meep, Luke Thomson, david garcia, Jake st
+                      amand, michael clarke, Sean Nichols, MochiPaisen, Joe
+                      <br />
+                      <br />
+                      Alois trancy, Chitosaki, Da Mustache, Darkwarrior619,
+                      Derek.Zhou, Ethan Tran, India Actual, Malc, Najaho, Paul
+                      Bartelt, The Gaming Vader, Thorbjörn Meyer, Tyler Robins,
+                      W, WolframElementia
+                      <br />
+                      <br />
+                      Alex, Ali Mohammed, Andy, Angry Red Panda, Baracus7, Blizz
+                      Land, Brian Alvarez, Caretaker, Chris Bennett, Darro Chan,
+                      Donovan George, Dusti333, Ethan Ingram, Jodie Hicks,
+                      Johnny Davis, Juan D Arrieta, Justin L Elder, Kandice
+                      Towner, L3wdS3npai59, mark jacob, Marky Mark, Matthew
+                      Strom, Mr.Addicted, Nep Nep, Nep Nep, Scholtinator,
+                      SenpaiHentai, Sir bopy, TallGuyTyler, TheMilesLP, Will
+                      DeRegio, William Lindsay, WolfX32, Xavier Cano
+                    </p>
+                    <hr class="my-4" />
+                    <p>
+                      Also, special thanks as well for
+                      <a
+                        href="https://twitter.com/MaestormXR"
+                        class="items-center w-[120px] p-1 h-11 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-200 dark:text-white dark:hover:bg-neutral-800 dark:bg-neutral-900 bg-neutral-100"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        MaestormXR</a
+                      >
+                      for stylish code reviews, as well as
+                      <a
+                        href="https://twitter.com/Merryweatherey"
+                        class="items-center w-[120px] p-1 h-11 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-200 dark:text-white dark:hover:bg-neutral-800 dark:bg-neutral-900 bg-neutral-100"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Merryweather</a
+                      >
+                      for their iconic characters and more!
+                    </p>
+                    <hr class="my-4" />
+
+                    <p class="w-full text-left">
+                      From PausePlayed with love ///
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <!-- SETTINGS -->
+              <li>
+                <button
+                  type="button"
+                  class="flex items-center w-full p-2 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+                  aria-controls="dropdownContainer11"
+                  data-collapse-toggle="dropdownContainer11"
+                >
+                  <!-- aria-controls="dropdownContainer11"
+                data-collapse-toggle="dropdownContainer11" -->
+                  <span
+                    class="flex-1 ml-3 text-left whitespace-nowrap font-semibold"
+                    >Settings</span
+                  >
+                  <svg
+                    class="w-5 h-5 mr-1 z-10"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 15"
+                  >
+                    <path
+                      fill="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"
+                    />
+                  </svg>
+                  <!-- <span
+                    class="absolute right-0 inset-y-0 mt-4 mr-5 inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-neutral-800 bg-neutral-100 rounded-full dark:bg-neutral-900 dark:text-neutral-300 z-0"
+                  ></span> -->
+                </button>
+
+                <ul
+                  id="dropdownContainer11"
+                  class="relative hidden p-2 space-y-2"
+                >
+                  <li>
+                    <button
+                      type="button"
+                      class="relative w-full flex items-center p-2 h-11 text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+                      aria-controls="dropdown-settings1"
+                      data-collapse-toggle="dropdown-settings1"
+                    >
+                      <span class="absolute font-bold left-0 ml-5"
+                        >Interface</span
+                      >
+                    </button>
+
+                    <ul id="dropdown-settings1" class="relative py-2 space-y-2">
+                      <!-- <hr class="my-4" /> -->
+                      <li>
+                        <div
+                          class="relative flex items-center cursor-pointer"
+                          id="randomButton"
+                        >
+                          <div
+                            class="ml-5 rounded-full bg-neutral-300 w-20 dark:bg-neutral-700 checked:"
+                          >
+                            <div
+                              id="randomCircle"
+                              class="rounded-full bg-white w-10 h-10 scale-75 transition-transform dark:bg-neutral-900"
+                            ></div>
+                          </div>
+                          <span
+                            class="text-neutral-900 transition duration-75 rounded-full group dark:text-white ml-5"
+                            >Randomize</span
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <div
+                          class="relative flex items-center cursor-pointer"
+                          id="themeButton"
+                        >
+                          <div
+                            class="ml-5 rounded-full bg-neutral-300 w-20 dark:bg-neutral-700 cursor-pointer"
+                          >
+                            <div
+                              id="themeCircle"
+                              class="rounded-full bg-white w-10 h-10 scale-75 transition-transform dark:bg-neutral-900"
+                            ></div>
+                          </div>
+                          <span
+                            class="text-neutral-900 transition duration-75 rounded-full group dark:text-white ml-5"
+                            >Dark Mode</span
+                          >
+                        </div>
+                      </li>
+
+                      <li>
+                        <div
+                          class="relative flex items-center cursor-pointer"
+                          id="bookmarkButton"
+                        >
+                          <div
+                            class="ml-5 rounded-full bg-neutral-300 w-20 dark:bg-neutral-700 checked:"
+                          >
+                            <div
+                              id="bookmarkCircle"
+                              class="rounded-full bg-white w-10 h-10 transition-transform dark:bg-neutral-900"
+                            ></div>
+                          </div>
+                          <span
+                            class="text-neutral-900 transition duration-75 rounded-full group dark:text-white ml-5"
+                            >Shortcuts</span
+                          >
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <hr class="my-4 mx-4" />
+                    <button
+                      type="button"
+                      class="relative w-full flex items-center p-2 h-11 text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+                      aria-controls="dropdown-settings2"
+                      data-collapse-toggle="dropdown-settings2"
+                    >
+                      <span class="absolute font-bold left-0 ml-5"
+                        >Advanced</span
+                      >
+                    </button>
+
+                    <ul
+                      id="dropdown-settings2"
+                      class="relative hidden py-2 px-2 space-y-2 flex-col items-center"
+                    >
+                      <li>
+                        <button
+                          id="exportBookB1"
+                          type="button"
+                          class="relative w-auto flex items-center font-bold p-2 px-4 text-neutral-900 transition duration-75 rounded-full group bg-neutral-200 dark:bg-neutral-900 hover:bg-neutral-50 dark:text-white dark:hover:bg-neutral-950"
+                        >
+                          Manage Shortcuts
+                        </button>
+                        <div id="exp-modal" class="hidden w-full mt-[-2]">
+                          <div class="relative w-full max-w-md max-h-full">
+                            <div
+                              class="relative rounded-[30px] shadow bg-neutral-600/10 dark:bg-neutral-400/10 scrollbar-hide drop-shadow-lg dark:drop-shadow-lg"
+                            >
+                              <div class="p-4">
+                                <div>
+                                  <p
+                                    id="impTXT"
+                                    class="font-medium mb-4 text-neutral-900 dark:text-neutral-300"
+                                  >
+                                    <span class="font-black"> Import </span>
+                                    shortcuts <br />
+                                  </p>
+                                  <p
+                                    id="impWRN"
+                                    class="hidden font-medium mb-4 text-red-600"
+                                  >
+                                    <span class="font-black"> Invalid </span>
+                                    json <br />
+                                  </p>
+                                  <input
+                                    type="file"
+                                    id="importBook1"
+                                    style="display: none"
+                                    accept=".json"
+                                  />
+
+                                  <label
+                                    class="w-full p-3 mb-4 cursor-pointer rounded-full pl-4 pr-4 hover:ease-in focus:ease-in bg-white/20 dark:bg-neutral-800/20 text-neutral-900 transition duration-75 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-800"
+                                    for="importBook1"
+                                    id="fileLabel"
+                                  >
+                                    Select File
+                                  </label>
+                                  <br />
+                                  <br />
+                                  <button
+                                    id="importSave1"
+                                    type="button"
+                                    class="p-2 px-4 h-10 text-sm font-semibold rounded-full hover:drop-shadow-lg bg-neutral-200 dark:bg-neutral-800 text-neutral-900 transition duration-75 hover:bg-neutral-50 dark:text-white dark:hover:bg-neutral-950"
+                                  >
+                                    Save
+                                  </button>
+                                </div>
+                                <hr class="my-4" />
+                                <div>
+                                  <p
+                                    class="font-medium mb-4 text-neutral-900 dark:text-neutral-300"
+                                  >
+                                    <span class="font-black"> Export </span>
+                                    shortcuts <br />
+                                  </p>
+
+                                  <button
+                                    id="exportBook1"
+                                    type="button"
+                                    class="p-2 px-4 h-10 text-sm font-semibold rounded-full hover:drop-shadow-lg bg-neutral-200 dark:bg-neutral-800 text-neutral-900 transition duration-75 hover:bg-neutral-50 dark:text-white dark:hover:bg-neutral-950"
+                                  >
+                                    Export
+                                  </button>
+                                  <button
+                                    id="expCancelB2"
+                                    type="button"
+                                    class="p-2 px-4 h-10 text-sm right-0 font-semibold rounded-full hover:drop-shadow-lg bg-white/20 dark:bg-neutral-800/20 text-neutral-900 transition duration-75 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+                                  >
+                                    Cancel
+                                  </button>
+                                  <br />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <button
+                          id="clearCacheB1"
+                          type="button"
+                          class="relative w-auto flex items-center font-bold p-2 px-4 h-10 text-neutral-900 transition duration-75 rounded-full group dark:text-white hover:bg-red-400 dark:hover:bg-red-700 bg-red-500"
+                        >
+                          Clear Cache
+                        </button>
+                        <div
+                          id="cache-modal"
+                          class="hidden justify-center items-center w-full mt-[-2]"
+                        >
+                          <div class="relative w-full max-w-md max-h-full">
+                            <div
+                              class="relative rounded-[30px] shadow bg-red-500/30 scrollbar-hide drop-shadow-lg dark:drop-shadow-lg"
+                            >
+                              <div class="p-2 text-center">
+                                <p
+                                  class="font-medium mb-4 text-neutral-900 dark:text-neutral-300"
+                                >
+                                  This will<span class="font-black">
+                                    remove site's </span
+                                  ><br />
+                                  stored images and <br />
+                                  local cache<br />
+                                  <span class="font-black"> Include:</span>
+                                </p>
+                                <div
+                                  class="relative flex items-center cursor-pointer"
+                                  id="shortCacheButton"
+                                >
+                                  <div
+                                    class="rounded-full bg-red-500 w-20 dark:bg-red-600 mb-2"
+                                  >
+                                    <div
+                                      id="shortCacheCircle"
+                                      class="rounded-full bg-red-300 w-10 h-10 transition-transform dark:bg-red-900"
+                                    ></div>
+                                  </div>
+                                  <span
+                                    class="text-neutral-900 transition duration-75 rounded-full group dark:text-white ml-5"
+                                    >Shortcuts</span
+                                  >
+                                </div>
+
+                                <div
+                                  class="relative mb-4 flex items-center cursor-pointer"
+                                  id="tapCacheButton"
+                                >
+                                  <div
+                                    class="rounded-full bg-red-500 w-20 dark:bg-red-600 mb-2"
+                                  >
+                                    <div
+                                      id="tapCacheCircle"
+                                      class="rounded-full bg-red-300 w-10 h-10 transition-transform dark:bg-red-900"
+                                    ></div>
+                                  </div>
+                                  <span
+                                    class="text-neutral-900 transition duration-75 rounded-full group dark:text-white ml-5"
+                                    >Tap count</span
+                                  >
+                                </div>
+
+                                <button
+                                  id="deleteCacheB"
+                                  type="button"
+                                  class="p-2 px-4 h-10 text-sm font-semibold rounded-full hover:drop-shadow-lg text-neutral-900 transition duration-75 dark:text-white hover:bg-red-400 dark:hover:bg-red-700 bg-red-500"
+                                >
+                                  Delete
+                                </button>
+                                <button
+                                  id="clearCacheCancel"
+                                  type="button"
+                                  class="p-2 px-4 h-10 text-sm font-semibold rounded-full hover:drop-shadow-lg bg-white/20 dark:bg-neutral-800/20 text-neutral-900 transition duration-75 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+                                >
+                                  Cancel
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- ADS SIDEADD-->
+                  <li class="flex justify-center">
+                    <div
+                      class="cursor-pointer rounded-xl overflow-hidden w-full"
+                    >
+                      <script type="text/javascript">
+                        atOptions = {
+                          key: "2d1e5e3d266285a1bf8cef3242c7972f",
+                          format: "iframe",
+                          height: 286,
+                          width: 286,
+                          params: {},
+                        };
+                        document.write(
+                          "<scr" +
+                            'ipt type="text/javascript" src="//trashyepochabsorbing.com/2d1e5e3d266285a1bf8cef3242c7972f/invoke.js"></scr' +
+                            "ipt>"
+                        );
+                      </script>
+                    </div>
+                  </li>
+                  <!-- hidden -->
+                </ul>
+              </li>
+            </div>
+
+            <!-- <div
+              class="-p-0 bg-white/20 rounded-[20px] dark:bg-neutral-800/20"
+            ></div>
+            <br /><br /> -->
+            <div class="text-right">
+              <!-- sm:top-[501px] md:top-[210px] -->
+              <button
+                id="collapseButton"
+                onclick="toggleCollapse()"
+                type="button"
+                class="bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-800 hover:bg-neutral-100 dark:text-white text-neutral-900 hover:text-neutral-900 dark:hover:text-white rounded-full text-md p-1.5 inline-flex items-center z-10"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="w-[40px] h-[40px] pt-[9px] pl-[6px]"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="rounded-full bg-neutral-300 dark:bg-neutral-700"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+                <!-- <span class="sr-only">Collapse</span> -->
+              </button>
+            </div>
+            <div class="bg-white/20 rounded-[20px] dark:bg-neutral-800/20">
+              <li>
+                <button
+                  id="buttonC1"
+                  type="button"
+                  class="relative w-full flex items-center p-2 h-11 text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+                  aria-controls="dropdownContainer1"
+                  data-collapse-toggle="dropdownContainer1"
+                >
+                  <span class="absolute font-bold left-0 ml-5"
+                    >Hololive Vtuber/s</span
+                  >
+                  <span
+                    class="absolute right-0 inset-y-0 mt-2.5 mr-3 inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-neutral-800 bg-neutral-100 rounded-full dark:bg-neutral-900 dark:text-neutral-300"
+                    >1</span
+                  >
+                </button>
+
+                <ul
+                  id="dropdownContainer1"
+                  class="relative hidden py-2 space-y-2"
+                >
+                  <div id="bg-images" data-number="27">
+                    <li data-id="22" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        Kureiji Ollie
+                      </span>
+                      <img
+                        src="https://i.ibb.co/3vhPJyz/Ollie.webp"
+                        type="image/apng"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                  </div>
+                </ul>
+              </li>
+            </div>
+            <div
+              class="-p-0 bg-white/20 rounded-[20px] dark:bg-neutral-800/20 cursor-pointer"
+            >
+              <li>
+                <button
+                  id="buttonC2"
+                  type="button"
+                  class="relative w-full flex items-center p-2 h-11 text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+                  aria-controls="dropdownContainer2"
+                  data-collapse-toggle="dropdownContainer2"
+                >
+                  <span class="absolute font-bold left-0 ml-5"
+                    >EN Vtubers Anime</span
+                  >
+                  <span
+                    class="absolute right-0 inset-y-0 mt-2.5 mr-3 inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-neutral-800 bg-neutral-100 rounded-full dark:bg-neutral-900 dark:text-neutral-300"
+                    >5</span
+                  >
+                </button>
+                <ul
+                  id="dropdownContainer2"
+                  class="relative hidden py-2 space-y-2"
+                >
+                  <div id="bg-images" data-number="27" class="group">
+                    <li data-id="1" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        Projekt Melody
+                      </span>
+                      <img
+                        src="https://i.ibb.co/NLjTRkn/Melody.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <li data-id="2" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        IronMouse
+                      </span>
+                      <img
+                        src="https://i.ibb.co/BnG7nmW/IRONMOUSE.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <!-- ADS SIDEADD-->
+                    <li class="flex justify-center">
+                      <div
+                        class="cursor-pointer rounded-xl overflow-hidden w-full"
+                      >
+                        <script type="text/javascript">
+                          atOptions = {
+                            key: "2d1e5e3d266285a1bf8cef3242c7972f",
+                            format: "iframe",
+                            height: 286,
+                            width: 286,
+                            params: {},
+                          };
+                          document.write(
+                            "<scr" +
+                              'ipt type="text/javascript" src="//trashyepochabsorbing.com/2d1e5e3d266285a1bf8cef3242c7972f/invoke.js"></scr' +
+                              "ipt>"
+                          );
+                        </script>
+                      </div>
+                    </li>
+                    <li data-id="3" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        LichVtuber
+                      </span>
+                      <img
+                        src="https://i.ibb.co/Gn6b5Cc/Lich.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <li data-id="4" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        VeiBae
+                      </span>
+                      <img
+                        src="https://i.ibb.co/hMv1N4t/VeiBae.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <li data-id="5" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        BunnyGif
+                      </span>
+                      <img
+                        src="https://i.ibb.co/Trc4pCZ/Bunny.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <!-- ADS SIDEADD-->
+                    <li class="flex justify-center">
+                      <div
+                        class="cursor-pointer rounded-xl overflow-hidden w-full"
+                      >
+                        <script type="text/javascript">
+                          atOptions = {
+                            key: "2d1e5e3d266285a1bf8cef3242c7972f",
+                            format: "iframe",
+                            height: 286,
+                            width: 286,
+                            params: {},
+                          };
+                          document.write(
+                            "<scr" +
+                              'ipt type="text/javascript" src="//trashyepochabsorbing.com/2d1e5e3d266285a1bf8cef3242c7972f/invoke.js"></scr' +
+                              "ipt>"
+                          );
+                        </script>
+                      </div>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+            </div>
+            <div class="-p-0 bg-white/20 rounded-[20px] dark:bg-neutral-800/20">
+              <li>
+                <button
+                  id="buttonC3"
+                  type="button"
+                  class="relative w-full flex items-center p-2 h-11 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+                  aria-controls="dropdownContainer3"
+                  data-collapse-toggle="dropdownContainer3"
+                >
+                  <span class="absolute font-bold left-0 ml-5"
+                    >Merryweather OC</span
+                  >
+                  <span
+                    class="absolute right-0 inset-y-0 mt-2.5 mr-3 inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-neutral-800 bg-neutral-100 rounded-full dark:bg-neutral-900 dark:text-neutral-300"
+                    >6</span
+                  >
+                </button>
+                <ul
+                  id="dropdownContainer3"
+                  class="relative hidden py-2 space-y-2"
+                >
+                  <div id="bg-images" data-number="27">
+                    <li data-id="7" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        Google-sama
+                      </span>
+                      <img
+                        src="https://i.ibb.co/61rydWp/Google-sama.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <li data-id="8" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        Edge-chan
+                      </span>
+                      <img
+                        src="https://i.ibb.co/cLqKb2s/Edge-chan.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <!-- ADS SIDEADD-->
+                    <li class="flex justify-center">
+                      <div
+                        class="cursor-pointer rounded-xl overflow-hidden w-full"
+                      >
+                        <script type="text/javascript">
+                          atOptions = {
+                            key: "2d1e5e3d266285a1bf8cef3242c7972f",
+                            format: "iframe",
+                            height: 286,
+                            width: 286,
+                            params: {},
+                          };
+                          document.write(
+                            "<scr" +
+                              'ipt type="text/javascript" src="//trashyepochabsorbing.com/2d1e5e3d266285a1bf8cef3242c7972f/invoke.js"></scr' +
+                              "ipt>"
+                          );
+                        </script>
+                      </div>
+                    </li>
+                    <li data-id="9" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        PS4-chan
+                      </span>
+                      <img
+                        src="https://i.ibb.co/TMn0Xcd/PS4.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <li data-id="10" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        Xbox-chan
+                      </span>
+                      <img
+                        src="https://i.ibb.co/5hT9ZTh/XBX-chan.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <!-- ADS SIDEADD-->
+                    <li class="flex justify-center">
+                      <div
+                        class="cursor-pointer rounded-xl overflow-hidden w-full"
+                      >
+                        <script type="text/javascript">
+                          atOptions = {
+                            key: "2d1e5e3d266285a1bf8cef3242c7972f",
+                            format: "iframe",
+                            height: 286,
+                            width: 286,
+                            params: {},
+                          };
+                          document.write(
+                            "<scr" +
+                              'ipt type="text/javascript" src="//trashyepochabsorbing.com/2d1e5e3d266285a1bf8cef3242c7972f/invoke.js"></scr' +
+                              "ipt>"
+                          );
+                        </script>
+                      </div>
+                    </li>
+                    <li data-id="16" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        MerryDawg
+                      </span>
+                      <img
+                        src="https://i.ibb.co/s1FfP8h/Merry-Dawg.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <li data-id="17" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        Lumi
+                      </span>
+                      <img
+                        src="https://i.ibb.co/805YSzp/Lumi.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <!-- ADS SIDEADD-->
+                    <li class="flex justify-center">
+                      <div
+                        class="cursor-pointer rounded-xl overflow-hidden w-full"
+                      >
+                        <script type="text/javascript">
+                          atOptions = {
+                            key: "2d1e5e3d266285a1bf8cef3242c7972f",
+                            format: "iframe",
+                            height: 286,
+                            width: 286,
+                            params: {},
+                          };
+                          document.write(
+                            "<scr" +
+                              'ipt type="text/javascript" src="//trashyepochabsorbing.com/2d1e5e3d266285a1bf8cef3242c7972f/invoke.js"></scr' +
+                              "ipt>"
+                          );
+                        </script>
+                      </div>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+            </div>
+            <div class="-p-0 bg-white/20 rounded-[20px] dark:bg-neutral-800/20">
+              <li>
+                <button
+                  id="buttonC4"
+                  type="button"
+                  class="relative w-full flex items-center p-2 h-11 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+                  aria-controls="dropdownContainer4"
+                  data-collapse-toggle="dropdownContainer4"
+                >
+                  <span class="absolute font-bold left-0 ml-5"
+                    >Internet Waifus</span
+                  >
+                  <span
+                    class="absolute right-0 inset-y-0 mt-2.5 mr-3 inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-neutral-800 bg-neutral-100 rounded-full dark:bg-neutral-900 dark:text-neutral-300"
+                    >10</span
+                  >
+                </button>
+                <ul
+                  id="dropdownContainer4"
+                  class="relative hidden py-2 space-y-2"
+                >
+                  <div id="bg-images" data-number="27">
+                    <li data-id="11" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        Lily
+                      </span>
+                      <img
+                        src="https://i.ibb.co/Syq78kr/Lily.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <li data-id="12" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        Ota-chan
+                      </span>
+                      <img
+                        src="https://i.ibb.co/DYzQRXk/Otachan.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <!-- ADS SIDEADD-->
+                    <li class="flex justify-center">
+                      <div
+                        class="cursor-pointer rounded-xl overflow-hidden w-full"
+                      >
+                        <script type="text/javascript">
+                          atOptions = {
+                            key: "2d1e5e3d266285a1bf8cef3242c7972f",
+                            format: "iframe",
+                            height: 286,
+                            width: 286,
+                            params: {},
+                          };
+                          document.write(
+                            "<scr" +
+                              'ipt type="text/javascript" src="//trashyepochabsorbing.com/2d1e5e3d266285a1bf8cef3242c7972f/invoke.js"></scr' +
+                              "ipt>"
+                          );
+                        </script>
+                      </div>
+                    </li>
+                    <li data-id="13" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        Zone-tan
+                      </span>
+                      <img
+                        src="https://i.ibb.co/7X5ZSGT/Zone-tan.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <li data-id="15" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        Uzaki-chan
+                      </span>
+                      <img
+                        src="https://i.ibb.co/CtgS8QW/Uzaki-chan.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <!-- ADS SIDEADD-->
+                    <li class="flex justify-center">
+                      <div
+                        class="cursor-pointer rounded-xl overflow-hidden w-full"
+                      >
+                        <script type="text/javascript">
+                          atOptions = {
+                            key: "2d1e5e3d266285a1bf8cef3242c7972f",
+                            format: "iframe",
+                            height: 286,
+                            width: 286,
+                            params: {},
+                          };
+                          document.write(
+                            "<scr" +
+                              'ipt type="text/javascript" src="//trashyepochabsorbing.com/2d1e5e3d266285a1bf8cef3242c7972f/invoke.js"></scr' +
+                              "ipt>"
+                          );
+                        </script>
+                      </div>
+                    </li>
+                    <li data-id="6" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        BunnyAyu
+                      </span>
+                      <img
+                        src="https://i.ibb.co/F4Yb3kZ/Bunny-IRL.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+
+                    <li data-id="14" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        Golden Onyx
+                      </span>
+                      <img
+                        src="https://i.ibb.co/Y83dMZF/Golden-Onyx.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <!-- ADS SIDEADD-->
+                    <li class="flex justify-center">
+                      <div
+                        class="cursor-pointer rounded-xl overflow-hidden w-full"
+                      >
+                        <script type="text/javascript">
+                          atOptions = {
+                            key: "2d1e5e3d266285a1bf8cef3242c7972f",
+                            format: "iframe",
+                            height: 286,
+                            width: 286,
+                            params: {},
+                          };
+                          document.write(
+                            "<scr" +
+                              'ipt type="text/javascript" src="//trashyepochabsorbing.com/2d1e5e3d266285a1bf8cef3242c7972f/invoke.js"></scr' +
+                              "ipt>"
+                          );
+                        </script>
+                      </div>
+                    </li>
+                    <li data-id="18" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        Cerberus
+                      </span>
+                      <img
+                        src="https://i.ibb.co/k5dzpp9/Cerberus.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <li data-id="19" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        Cerberus 1
+                      </span>
+                      <img
+                        src="https://i.ibb.co/TRLbqMr/Cerberus1.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <!-- ADS SIDEADD-->
+                    <li class="flex justify-center">
+                      <div
+                        class="cursor-pointer rounded-xl overflow-hidden w-full"
+                      >
+                        <script type="text/javascript">
+                          atOptions = {
+                            key: "2d1e5e3d266285a1bf8cef3242c7972f",
+                            format: "iframe",
+                            height: 286,
+                            width: 286,
+                            params: {},
+                          };
+                          document.write(
+                            "<scr" +
+                              'ipt type="text/javascript" src="//trashyepochabsorbing.com/2d1e5e3d266285a1bf8cef3242c7972f/invoke.js"></scr' +
+                              "ipt>"
+                          );
+                        </script>
+                      </div>
+                    </li>
+                    <li data-id="20" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        Cerberus 2
+                      </span>
+                      <img
+                        src="https://i.ibb.co/hR8rbDn/Cerberus2.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <li data-id="21" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        Cerberus 3
+                      </span>
+                      <img
+                        src="https://i.ibb.co/f1FWXvH/Cerberus3.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <!-- ADS SIDEADD-->
+                    <li class="flex justify-center">
+                      <div
+                        class="cursor-pointer rounded-xl overflow-hidden w-full"
+                      >
+                        <script type="text/javascript">
+                          atOptions = {
+                            key: "2d1e5e3d266285a1bf8cef3242c7972f",
+                            format: "iframe",
+                            height: 286,
+                            width: 286,
+                            params: {},
+                          };
+                          document.write(
+                            "<scr" +
+                              'ipt type="text/javascript" src="//trashyepochabsorbing.com/2d1e5e3d266285a1bf8cef3242c7972f/invoke.js"></scr' +
+                              "ipt>"
+                          );
+                        </script>
+                      </div>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+            </div>
+            <div class="-p-0 bg-white/20 rounded-[20px] dark:bg-neutral-800/20">
+              <li>
+                <button
+                  id="buttonC5"
+                  type="button"
+                  class="relative w-full flex items-center p-2 h-11 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+                  aria-controls="dropdownContainer5"
+                  data-collapse-toggle="dropdownContainer5"
+                >
+                  <span class="absolute font-bold left-0 ml-5"
+                    >Derivatives ⟠</span
+                  >
+                  <!-- bg-neutral-100 dark:bg-neutral-900-->
+                  <span
+                    class="absolute right-0 inset-y-0 mt-2.5 mr-3 inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-neutral-800 rounded-full dark:text-neutral-300 bg-red-500"
+                    >5</span
+                  >
+                </button>
+                <ul
+                  id="dropdownContainer5"
+                  class="relative hidden py-2 space-y-2"
+                >
+                  <div id="bg-images" data-number="27">
+                    <li data-id="23" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        Eth-sama
+                      </span>
+                      <img
+                        src="https://i.ibb.co/yhG7Bbx/Eth-sama.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <li data-id="27" data-sef="googlbounce" class="bg relative">
+                      <!-- hover:bg-red-400 dark:hover:bg-red-700 bg-red-500 
+                      bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75 hover:bg-neutral-500 dark:hover:bg-neutral-400-->
+                      <span
+                        class="cursor-pointer absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 dark:text-white hover:bg-red-400 dark:hover:bg-red-700 bg-red-500"
+                        onclick="window.open('https://opensea.io/assets/ethereum/0xf75140376d246d8b1e5b8a48e3f00772468b3c0c/114', '_blank');"
+                      >
+                        Persephone
+                      </span>
+                      <img
+                        src="https://i.ibb.co/D4J635f/Persephone.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <li data-id="24" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        Peach
+                      </span>
+                      <img
+                        src="https://i.ibb.co/4dBW0cL/Peach.webp"
+                        type="image/apng"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <!-- ADS SIDEADD-->
+                    <li class="flex justify-center">
+                      <div
+                        class="cursor-pointer rounded-xl overflow-hidden w-full"
+                      >
+                        <script type="text/javascript">
+                          atOptions = {
+                            key: "2d1e5e3d266285a1bf8cef3242c7972f",
+                            format: "iframe",
+                            height: 286,
+                            width: 286,
+                            params: {},
+                          };
+                          document.write(
+                            "<scr" +
+                              'ipt type="text/javascript" src="//trashyepochabsorbing.com/2d1e5e3d266285a1bf8cef3242c7972f/invoke.js"></scr' +
+                              "ipt>"
+                          );
+                        </script>
+                      </div>
+                    </li>
+                    <li data-id="25" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        LightenBee
+                      </span>
+                      <img
+                        src="https://i.ibb.co/3Ym9B3S/LightB.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <li data-id="26" data-sef="googlbounce" class="bg relative">
+                      <span
+                        class="absolute w-auto px-5 py-2 h-10 right-0 bottom-0 transition duration-75 rounded-full group text-neutral-900 bg-neutral-200/75 dark:text-white dark:bg-neutral-800/75"
+                      >
+                        BaeCafe
+                      </span>
+                      <img
+                        src="https://i.ibb.co/f8q2Tq5/Sawawse.webp"
+                        class="cursor-pointer hover:bg-neutral-500/20 rounded-xl"
+                      />
+                    </li>
+                    <!-- ADS SIDEADD-->
+                    <li class="flex justify-center">
+                      <div
+                        class="cursor-pointer rounded-xl overflow-hidden w-full"
+                      >
+                        <script type="text/javascript">
+                          atOptions = {
+                            key: "2d1e5e3d266285a1bf8cef3242c7972f",
+                            format: "iframe",
+                            height: 286,
+                            width: 286,
+                            params: {},
+                          };
+                          document.write(
+                            "<scr" +
+                              'ipt type="text/javascript" src="//trashyepochabsorbing.com/2d1e5e3d266285a1bf8cef3242c7972f/invoke.js"></scr' +
+                              "ipt>"
+                          );
+                        </script>
+                      </div>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+            </div>
+            <br /><br />
+            <div class="-p-0 bg-white/20 rounded-[20px] dark:bg-neutral-800/20">
+              <li>
+                <button
+                  type="button"
+                  class="relative w-full flex items-center p-2 h-11 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+                  aria-controls="dropdownContainer6"
+                  data-collapse-toggle="dropdownContainer6"
+                >
+                  <span class="absolute font-bold left-0 ml-5"
+                    >Exclusive Versions</span
+                  >
+                  <span
+                    class="absolute right-0 inset-y-0 mt-2.5 mr-3 inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-neutral-800 bg-neutral-100 rounded-full dark:bg-neutral-900 dark:text-neutral-300"
+                    >♡</span
+                  >
+                </button>
+                <ul
+                  id="dropdownContainer6"
+                  class="relative justify-center items-center hidden py-2 space-y-2"
+                >
+                  <li>
+                    <p
+                      class="w-full text-base text-justify text-neutral-900 transition duration-75 rounded-lg p-[20px] group dark:text-white"
+                    >
+                      Ad free, Offline Mode, No Watermark/ Alternate versions
+                      and other animations are only available on:
+                    </p>
+                    <div class="max-w-[200px] mx-auto">
+                      <div class="grid grid-cols-2 gap-4">
+                        <div
+                          class="group relative flex flex-col items-center p-1 rounded-md bg-white/0 cursor-pointer transition duration-75 text-neutral-900 dark:text-white dark:hover:bg-neutral-800 hover:bg-neutral-200 text-center"
+                        >
+                          <a
+                            href="https://patreon.com/pauseplayed"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <img
+                              src="https://static-00.iconduck.com/assets.00/patreon-icon-2048x2048-f80b89j2.png"
+                              alt="PP"
+                              class="w-16 h-16 rounded-full"
+                            />
+                            <p>Patreon</p>
+                          </a>
+                        </div>
+                        <div
+                          class="group relative flex flex-col items-center p-1 rounded-md bg-white/0 cursor-pointer transition duration-75 text-neutral-900 dark:text-white dark:hover:bg-neutral-800 hover:bg-neutral-200 text-center"
+                        >
+                          <a
+                            href="https://sealed.art/subscribe/0x4fb91c32be74946844755cfb5f39650482ae294e"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <img
+                              src="https://i.ibb.co/t87RTnv/seal.jpg"
+                              alt="Sealed.art"
+                              class="w-16 h-16 rounded-full"
+                            />
+                            <p>Sealed</p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="flex justify-center items-center w-full h-auto">
+                      <button
+                        onclick="location.href='https://www.patreon.com/pauseplayed'"
+                        target="_blank"
+                        type="button"
+                        class="items-center w-[120px] p-1 h-11 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-200 dark:text-white dark:hover:bg-neutral-800 dark:bg-neutral-900 bg-neutral-100"
+                      >
+                        <span class="font-bold">PATREON</span>
+                      </button>
+                    </div> -->
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <button
+                  type="button"
+                  class="relative w-full flex items-center p-2 h-11 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+                  aria-controls="dropdownContainer7"
+                  data-collapse-toggle="dropdownContainer7"
+                >
+                  <span class="absolute font-bold left-0 ml-5"
+                    >Version Dev Log</span
+                  >
+                  <span
+                    class="absolute right-0 inset-y-0 mt-2.5 mr-3 inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-neutral-800 bg-neutral-100 rounded-full dark:bg-neutral-900 dark:text-neutral-300"
+                    >△</span
+                  >
+                </button>
+                <ul
+                  id="dropdownContainer7"
+                  class="relative hidden py-2 space-y-2"
+                >
+                  <li
+                    class="w-full text-base text-justify text-neutral-900 transition duration-75 rounded-lg p-[20px] group dark:text-white"
+                  >
+                    1.20 (03/12/2024)<br />
+                    <ul class="p-2">
+                      <li>Soft Launch of website</li>
+                      <li>Added Draggable URL Shortcuts</li>
+                      <li>Converted GIF to APNGs for better quality</li>
+                      <li>Added Image Cache Functionality</li>
+                      <li>Fixed Animation Titles</li>
+                      <li>New UI design with theme selection</li>
+                      <li>Added New Buttons</li>
+                      <li>Quick randomize button</li>
+                      <li>Change Waifu Upon Animation click</li>
+                      <li>Removed Offline Mode</li>
+                    </ul>
+                    <hr class="my-4" />
+                    1.19 (12/21/2022)<br />
+                    <ul class="p-2">
+                      <li>Migrated to Manifest V3</li>
+                      <li>Added new animations</li>
+                      <li>Currently debugging bookmarks</li>
+                      <li>Currently fixing animation titles</li>
+                    </ul>
+                    <hr class="my-4" />
+                    1.18 (01/27/2022)<br />
+                    <ul class="p-2">
+                      <li>Fixed highlights and added buttons</li>
+                      <li>Added new animations</li>
+                      <li>Fixed some animation sizes</li>
+                    </ul>
+                    <hr class="my-4" />
+                    1.17 (09/18/21)<br />
+                    <ul class="p-2">
+                      <li>Now compatible with Phone browser</li>
+                      <li>See FAQs on how to install on Phone</li>
+
+                      <li>Added new animations and buttons</li>
+                    </ul>
+                    <hr class="my-4" />
+                    1.1 (08/04/21)<br />
+                    <ul class="p-2">
+                      <li>Added Title on each Animation</li>
+                      <li>Fixed Scroll issues on side Panel</li>
+                    </ul>
+                    <hr class="my-4" />
+                    1.0 (07/11/21)<br />
+                    <ul class="p-2">
+                      <li>Initial release</li>
+                      <li>Merged all userstyle animations</li>
+                    </ul>
+                  </li>
+                  <!-- ADS SIDEADD-->
+                  <li class="flex justify-center">
+                    <div
+                      class="cursor-pointer rounded-xl overflow-hidden w-full"
+                    >
+                      <script type="text/javascript">
+                        atOptions = {
+                          key: "2d1e5e3d266285a1bf8cef3242c7972f",
+                          format: "iframe",
+                          height: 286,
+                          width: 286,
+                          params: {},
+                        };
+                        document.write(
+                          "<scr" +
+                            'ipt type="text/javascript" src="//trashyepochabsorbing.com/2d1e5e3d266285a1bf8cef3242c7972f/invoke.js"></scr' +
+                            "ipt>"
+                        );
+                      </script>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <button
+                  type="button"
+                  class="relative w-full flex items-center p-2 h-11 text-base text-neutral-900 transition duration-75 rounded-full group hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-800"
+                  aria-controls="dropdownContainer9"
+                  data-collapse-toggle="dropdownContainer9"
+                >
+                  <span class="absolute font-bold left-0 ml-5">Disclaimer</span>
+                  <span
+                    class="absolute right-0 inset-y-0 mt-2.5 mr-3 inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-neutral-800 bg-neutral-100 rounded-full dark:bg-neutral-900 dark:text-neutral-300"
+                    >!</span
+                  >
+                </button>
+                <ul
+                  id="dropdownContainer9"
+                  class="relative hidden py-2 space-y-2"
+                >
+                  <li
+                    class="w-full text-base text-justify text-neutral-900 transition duration-75 rounded-lg p-[20px] group dark:text-white"
+                  >
+                    <div class="mx-auto max-w-[100px]">
+                      <div
+                        class="group relative flex flex-col items-center p-1 rounded-md bg-white/0 cursor-pointer transition duration-75 text-neutral-900 dark:text-white dark:hover:bg-neutral-800 hover:bg-neutral-200 text-center"
+                      >
+                        <a
+                          href="//www.dmca.com/Protection/Status.aspx?ID=298f4f5f-bdb2-4425-947b-e3c6a3cc1660"
+                          title="DMCA.com Protection Status"
+                          class="dmca-badge"
+                        >
+                          <img
+                            class="bg-#8BC53F rounded-full"
+                            src="https://images.dmca.com/Badges/DMCA_badge_grn_60w.png?ID=298f4f5f-bdb2-4425-947b-e3c6a3cc1660"
+                            alt="DMCA.com Protection Status"
+                          />
+                          <p>DMCA</p>
+                        </a>
+                        <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
+                      </div>
+                    </div>
+                    <hr class="my-4" />
+                    <p>
+                      This website is not affiliated with, maintained,
+                      authorized, endorsed, or sponsored by Google Inc. The use
+                      of the Google logo or name in this website is for
+                      identification, educational and parody purposes only,
+                      under "fair use" guidelines, and no copyright infringement
+                      is intended.
+                    </p>
+                    <hr class="my-4" />
+                    <p>
+                      The concept of Google Doodles is under the Creative
+                      Commons (CC) license and all rights belong to their
+                      respective owners.
+                    </p>
+                    <hr class="my-4" />
+                    <p>
+                      The website includes anime fanarts. All characters
+                      depicted are of legal age. The animation contents might be
+                      deemed inappropriate for some audiences. We have no
+                      harmful intent but wanted to share cultured anime content.
+                      User discretion is advised.
+                    </p>
+                    <hr class="my-4" />
+                    <p class="w-full text-left">
+                      Copyright© 2020-3069 PausePlayed
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- drawer component -->
+
+    
+
+    <canvas
+      id="confettiCanvas"
+      class="fixed top-0 left-0 z-50 pointer-events-none md:w-full md:h-full sm:w-screen sm:h-screen"
+    ></canvas>
+
+    <script>
+      ////////////////////////////////////BOOKMARKS////////////////////////////////////
+      // script.js
+      // const worker = new Worker(new URL('/src/service-worker.js', import.meta.url));
+      // Register the service worker
+
+      const bookmarksContainer = document.getElementById("bookmarks");
+      const addBookmarkButton = document.getElementById("addBookmark");
+
+      const editBookmarkButton = document.getElementById("saveBookmark");
+      const bookmarkUrlInput = document.getElementById("bookmarkUrl");
+      // Check if the user is on a mobile device
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      let bookTimeoutId; // Declare a variable to hold the timeout outside the function
+      // Load bookmarks from local storage
+      let bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || [];
+
+      // Check if there are no added bookmarks yet
+      if (bookmarks.length === 0) {
+        // Create a default bookmark
+        const defaultBookmark = {
+          title: "PausePlayed",
+          url: "https://twitter.com/PausePLayed",
+          faviconUrl:
+            "https://pbs.twimg.com/profile_images/1723151525076426752/LtJFTuQA_400x400.jpg",
+        };
+
+        // Add the default bookmark to the bookmarks array
+        bookmarks.push(defaultBookmark);
+
+        // Save the bookmarks array to local storage
+        localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+      }
+
+      if (isMobile) {
+        // Create a bookmark element
+        window.createBookmarkElement = function (bookmark, index) {
+          const { title, url } = bookmark;
+          const faviconUrl = `https://www.google.com/s2/favicons?sz=128&domain=${url}`;
+          const bookmarkElement = document.createElement("div");
+          let isMouseOver = false;
+
+          bookmarkElement.classList.add(
+            "bookmark",
+            "overflow",
+            "group",
+            "relative",
+            "flex",
+            "flex-col",
+            "items-center",
+            "p-1",
+            "rounded-md",
+            "bg-white/0",
+            "cursor-pointer",
+            "hover:bg-gray-100/20",
+            "cursor-grab"
+          );
+
+          const img = document.createElement("img");
+          img.src = faviconUrl;
+          img.alt = "Favicon";
+          img.classList.add(
+            "h-16",
+            "w-16",
+            "mb-2",
+            "rounded-full",
+            "cursor-pointer"
+          );
+          bookmarkElement.appendChild(img);
+
+          // img.onerror = function () {
+          //   this.src = defaultFaviconUrl; // If error, replace with default favicon
+          // };
+
+          img.onerror = function () {
+            // Create a button as an alternative favicon
+            const button = document.createElement("button");
+            button.classList.add(
+              "h-16",
+              "w-16",
+              "mb-2",
+              "rounded-full",
+              "flex",
+              "items-center",
+              "justify-center"
+            );
+
+            // Set the background of the button to a custom image
+            const customImageUrl = "https://i.ibb.co/486vxhK/icon128.png"; // Replace with your custom image path
+            button.style.backgroundImage = `url('${customImageUrl}')`;
+            button.style.backgroundSize = "cover"; // Make the image fit the actual size
+
+            // Create an inner element
+            const innerElement = document.createElement("div");
+            innerElement.textContent = title.charAt(0).toUpperCase(); // Get the first letter of the website
+            innerElement.classList.add(
+              "h-12",
+              "w-12",
+              "rounded-full",
+              "flex",
+              "items-center",
+              "justify-center",
+              "backdrop-blur",
+              "text-xl", // Make the text larger
+              "text-neutral-900",
+              "dark:text-neutral-300",
+              "bg-white/20",
+              "dark:bg-neutral-700/20"
+            ); // Adjust the size as needed
+
+            // Set the background of the inner element to bg-neutral-500/20
+            // innerElement.style.backgroundColor = "rgba(209, 213, 219, 0.1)"; // bg-neutral-500/20 in rgba
+
+            // Append the inner element to the button
+            button.appendChild(innerElement);
+            // Add a click event listener to the button
+            button.addEventListener("click", function () {
+              const link = url; // Assuming you've defined 'url' elsewhere in your code
+              if (link.includes("https://")) {
+                window.location.href = link;
+              } else {
+                window.location.href = "https://" + link;
+              }
+            });
+
+            // Replace the image with the button
+            this.replaceWith(button);
+          };
+
+          const pTitle = document.createElement("p");
+          pTitle.textContent = title;
+          pTitle.classList.add(
+            "titleBookmark",
+            "justify-items-center",
+            "items-center",
+            "py-1",
+            "px-2",
+            "rounded-[50px]",
+            "max-w-[100px]",
+            "min-w-[75px]",
+            "font-black",
+            "text-neutral-500",
+            "dark:text-neutral-400",
+            "group-hover:bg-neutral-500/40",
+            "group-hover:dark:bg-neutral-400/50",
+            "text-sm",
+            "text-center",
+            "truncate",
+
+            "delay-150",
+            "duration-300",
+            "ease-in-out"
+          );
+
+          bookmarkElement.appendChild(pTitle);
+
+          // let link = localStorage.getItem(url);
+
+          const editButton = document.createElement("button");
+          editButton.setAttribute("id", "eButton");
+          editButton.classList.add(
+            "editBookmark",
+            "display:none",
+            "absolute",
+            "hidden",
+            "group-hover:block",
+            "text-lg",
+            "rounded-r-full",
+            "p-1.5",
+            "top-[-1px]",
+            "left-[0px]",
+            "backdrop-blur",
+            "bg-neutral-300/30",
+            "dark:bg-neutral-700/30",
+            "dark:hover:bg-neutral-700",
+            "hover:bg-white",
+            "dark:text-white",
+            "text-neutral-500",
+            "hover:text-neutral-900",
+            "dark:hover:text-white"
+          );
+          editButton.dataset.index = index;
+          editButton.textContent = "Edit";
+          bookmarkElement.appendChild(editButton);
+
+          const deleteButton = document.createElement("button");
+          deleteButton.setAttribute("id", "dButton");
+          deleteButton.classList.add(
+            "deleteBookmark",
+            "display:none",
+            "absolute",
+            "hidden",
+            "group-hover:block",
+            "text-md",
+            "rounded-l-full",
+            "p-1.5",
+            "top-[-1px]",
+            "right-[0px]",
+            "backdrop-blur",
+            "bg-neutral-300/30",
+            "dark:bg-neutral-700/30",
+            "dark:hover:bg-red-600",
+            "hover:bg-red-600",
+            "dark:text-white",
+            "text-neutral-500",
+            "hover:text-white",
+            "hover:text-white"
+          );
+          deleteButton.textContent = "❌";
+          bookmarkElement.appendChild(deleteButton);
+          // Add a click event listener to the button
+          img.addEventListener("click", function () {
+            const link = url; // Assuming you've defined 'url' elsewhere in your code
+            if (link.includes("https://")) {
+              window.location.href = link;
+            } else {
+              window.location.href = "https://" + link;
+            }
+          });
+          pTitle.addEventListener("click", function () {
+            const link = url; // Assuming you've defined 'url' elsewhere in your code
+            if (link.includes("https://")) {
+              window.location.href = link;
+            } else {
+              window.location.href = "https://" + link;
+            }
+          });
+
+          return bookmarkElement;
+        };
+
+        window.renderBookmarks = function () {
+          bookmarks.forEach((bookmark, index) => {
+            const bookmarkElement = createBookmarkElement(bookmark, index);
+            bookmarksContainer.appendChild(bookmarkElement);
+            bookmarkElement.classList.add("cursor-grabbing");
+
+            if (bookmark === "gchanXshortcut") {
+              return; // Skip this bookmark
+            }
+
+            bookmarkElement.addEventListener("mouseover", function () {
+              // Change the trashButton's background color to red and increase its size by 20%
+              console.log("mouseover true");
+
+              // Set isMouseOver to true
+              isMouseOver = true;
+            });
+
+            bookmarkElement.addEventListener("mouseout", function () {
+              console.log("mouseover true");
+              // Set isMouseOver back to false when the mouse leaves the element
+              isMouseOver = true;
+            });
+
+            bookmarkElement.addEventListener("click", () => {
+              // Only execute the click event handler if isMouseOver is false
+              if (!isMouseOver) {
+                sMouseOver = false;
+                console.log("mouseover false");
+                const link = url; // Assuming you've defined 'url' elsewhere in your code
+                if (link.includes("https://")) {
+                  window.location.href = link;
+                } else {
+                  window.location.href = "https://" + link;
+                }
+              }
+            });
+          });
+          let timeoutId;
+          let sortTimeoutId; // Declare a variable to hold the timeout outside the functions
+          const trashButton = document.getElementById("trashButton");
+          let draggedBookmark;
+
+          //Create a new Sortable instance for the bookmarks container
+          new Sortable(bookmarksContainer, {
+            supportPointer: false,
+            animation: 150,
+            onEnd: function (event) {
+              // Remove the bookmark from the old position and insert it at the new position
+              if (event.oldIndex !== event.newIndex) {
+                const bookmark = bookmarks.splice(event.oldIndex, 1)[0];
+                bookmarks.splice(event.newIndex, 0, bookmark);
+
+                // Update the bookmarks array in local storage
+                localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+
+                // Clear the bookmarks container and re-render the bookmarks after 2 seconds
+                sortTimeoutId = setTimeout(function () {
+                  location.reload();
+                }, 1500); // 2000 milliseconds = 2 seconds
+              }
+              // trashButton.style.backgroundColor = "";
+              // trashButton.style.transform = "scale(1)";
+
+              event.item.style.opacity = "";
+              event.item.style.backdropFilter = "";
+            },
+
+            onStart: function (event) {
+              // Make the dragged item 20% transparent and apply a backdrop blur
+              event.item.style.opacity = "0";
+              event.item.style.backdropFilter = "blur(4px)";
+              // trashButton.style.backgroundColor = "red";
+              // trashButton.style.transform = "scale(1.2)";
+              // trashButton.style.opacity = "50%";
+              // trashButton.style.backdropFilter = "blur(4px)";
+
+              // If a timeout is ongoing, clear it
+              if (sortTimeoutId) {
+                clearTimeout(sortTimeoutId);
+              }
+            },
+          });
+        };
+      } else {
+        // Create a bookmark element
+        window.createBookmarkElement = function (bookmark, index) {
+          const { title, url } = bookmark;
+          const faviconUrl = `https://www.google.com/s2/favicons?sz=128&domain=${url}`;
+          const bookmarkElement = document.createElement("div");
+
+          if (bookmark === "gchanXshortcut") {
+            return; // Skip this bookmark
+          }
+
+          bookmarkElement.classList.add(
+            "bookmark",
+            "overflow",
+            "group",
+            "relative",
+            "flex",
+            "flex-col",
+            "items-center",
+            "p-1",
+            "rounded-md",
+            "bg-white/0",
+            "cursor-pointer",
+            "hover:bg-gray-100/20",
+            "cursor-grab"
+          );
+
+          const img = document.createElement("img");
+          img.src = faviconUrl;
+          img.alt = "Favicon";
+          img.classList.add(
+            "h-16",
+            "w-16",
+            "mb-2",
+            "rounded-full",
+            "cursor-pointer"
+          );
+          bookmarkElement.appendChild(img);
+
+          // img.onerror = function () {
+          //   this.src = defaultFaviconUrl; // If error, replace with default favicon
+          // };
+
+          img.onerror = function () {
+            // Create a button as an alternative favicon
+            const button = document.createElement("button");
+            button.classList.add(
+              "h-16",
+              "w-16",
+              "mb-2",
+              "rounded-full",
+              "flex",
+              "items-center",
+              "justify-center"
+            );
+
+            // Set the background of the button to a custom image
+            const customImageUrl = "https://i.ibb.co/486vxhK/icon128.png"; // Replace with your custom image path
+            button.style.backgroundImage = `url('${customImageUrl}')`;
+            button.style.backgroundSize = "cover"; // Make the image fit the actual size
+
+            // Create an inner element
+            const innerElement = document.createElement("div");
+            innerElement.textContent = title.charAt(0).toUpperCase(); // Get the first letter of the website
+            innerElement.classList.add(
+              "h-12",
+              "w-12",
+              "rounded-full",
+              "flex",
+              "items-center",
+              "justify-center",
+              "backdrop-blur",
+              "text-xl", // Make the text larger
+              "text-neutral-900",
+              "dark:text-neutral-300",
+              "bg-white/20",
+              "dark:bg-neutral-700/20"
+            ); // Adjust the size as needed
+
+            // Set the background of the inner element to bg-neutral-500/20
+            // innerElement.style.backgroundColor = "rgba(209, 213, 219, 0.1)"; // bg-neutral-500/20 in rgba
+
+            // Append the inner element to the button
+            button.appendChild(innerElement);
+            // Add a click event listener to the button
+            button.addEventListener("click", function () {
+              const link = url; // Assuming you've defined 'url' elsewhere in your code
+              if (link.includes("https://")) {
+                window.location.href = link;
+              } else {
+                window.location.href = "https://" + link;
+              }
+            });
+
+            // Replace the image with the button
+            this.replaceWith(button);
+          };
+
+          const pTitle = document.createElement("p");
+          pTitle.textContent = title;
+          pTitle.classList.add(
+            "titleBookmark",
+            "justify-items-center",
+            "items-center",
+            "py-1",
+            "px-2",
+            "rounded-[50px]",
+            "max-w-[100px]",
+            "min-w-[75px]",
+            "font-black",
+            "text-neutral-500",
+            "dark:text-neutral-400",
+            "group-hover:bg-neutral-500/40",
+            "group-hover:dark:bg-neutral-400/50",
+            "text-sm",
+            "text-center",
+            "truncate",
+
+            "delay-150",
+            "duration-300",
+            "ease-in-out"
+          );
+
+          bookmarkElement.appendChild(pTitle);
+
+          // let link = localStorage.getItem(url);
+
+          img.addEventListener("click", () => {
+            const link = url; // Assuming you've defined 'url' elsewhere in your code
+            if (link.includes("https://")) {
+              window.location.href = link;
+            } else {
+              window.location.href = "https://" + link;
+            }
+          });
+
+          pTitle.addEventListener("click", function () {
+            const link = url; // Assuming you've defined 'url' elsewhere in your code
+            if (link.includes("https://")) {
+              window.location.href = link;
+            } else {
+              window.location.href = "https://" + link;
+            }
+          });
+
+          const editButton = document.createElement("button");
+          editButton.setAttribute("id", "eButton");
+          editButton.classList.add(
+            "editBookmark",
+            "absolute",
+            "hidden",
+            "group-hover:block",
+            "text-lg",
+            "rounded-r-full",
+            "p-1.5",
+            "top-[-1px]",
+            "left-[0px]",
+            "backdrop-blur",
+            "bg-neutral-300/30",
+            "dark:bg-neutral-700/30",
+            "dark:hover:bg-neutral-700",
+            "hover:bg-white",
+            "dark:text-white",
+            "text-neutral-500",
+            "hover:text-neutral-900",
+            "dark:hover:text-white"
+          );
+          editButton.dataset.index = index;
+          editButton.textContent = "🖍️";
+          bookmarkElement.appendChild(editButton);
+
+          const deleteButton = document.createElement("button");
+          deleteButton.setAttribute("id", "dButton");
+          deleteButton.classList.add(
+            "deleteBookmark",
+            "absolute",
+            "hidden",
+            "group-hover:block",
+            "text-lg",
+            "rounded-l-full",
+            "p-1.5",
+            "top-[-1px]",
+            "right-[0px]",
+            "backdrop-blur",
+            "bg-neutral-300/30",
+            "dark:bg-neutral-700/30",
+            "dark:hover:bg-red-600",
+            "hover:bg-red-600",
+            "dark:text-white",
+            "text-neutral-500",
+            "hover:text-white",
+            "hover:text-white"
+          );
+          deleteButton.textContent = "❌";
+          bookmarkElement.appendChild(deleteButton);
+
+          return bookmarkElement;
+        };
+
+        window.renderBookmarks = function () {
+          bookmarks.forEach((bookmark, index) => {
+            const bookmarkElement = createBookmarkElement(bookmark, index);
+            bookmarksContainer.appendChild(bookmarkElement);
+            bookmarkElement.classList.add("cursor-grabbing");
+          });
+          let timeoutId;
+          let sortTimeoutId; // Declare a variable to hold the timeout outside the functions
+
+          // Create a new Sortable instance for the bookmarks container
+          new Sortable(bookmarksContainer, {
+            supportPointer: false,
+            animation: 150,
+            onEnd: function (event) {
+              // Remove the bookmark from the old position and insert it at the new position
+              if (event.oldIndex !== event.newIndex) {
+                const bookmark = bookmarks.splice(event.oldIndex, 1)[0];
+                bookmarks.splice(event.newIndex, 0, bookmark);
+
+                // Update the bookmarks array in local storage
+                localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+
+                // Clear the bookmarks container and re-render the bookmarks after 2 seconds
+                sortTimeoutId = setTimeout(function () {
+                  location.reload();
+                  // bookmarksContainer.innerHTML = "";
+                  // renderBookmarks();
+                }, 1500); // 2000 milliseconds = 2 seconds
+              }
+
+              event.item.style.opacity = "";
+              event.item.style.backdropFilter = "";
+            },
+
+            onStart: function (event) {
+              // Make the dragged item 20% transparent and apply a backdrop blur
+              event.item.style.opacity = "0";
+              event.item.style.backdropFilter = "blur(4px)";
+
+              // If a timeout is ongoing, clear it
+              if (sortTimeoutId) {
+                clearTimeout(sortTimeoutId);
+              }
+
+              window.delayeDragTouchMoveHandler = function (e) {
+                // Start a timeout to trigger the event after a delay
+                timeoutId = setTimeout(function () {
+                  // Your action here
+                }, 500); // 3000 milliseconds = 3 seconds
+              };
+              window.disableDelayedDrag = function (e) {
+                // If a timeout is ongoing, clear it
+                if (timeoutId) {
+                  clearTimeout(timeoutId);
+                }
+              };
+
+              // Delayed drag handler for mousemove and touchmove
+              event.item.addEventListener(
+                "mousemove",
+                delayeDragTouchMoveHandler
+              );
+              event.item.addEventListener(
+                "touchmove",
+                delayeDragTouchMoveHandler
+              );
+              event.item.addEventListener(
+                "touchstart",
+                delayeDragTouchMoveHandler
+              );
+
+              // Disable drag handler for mouseup, touchend, and touchcancel
+              event.item.addEventListener("mouseup", disableDelayedDrag);
+              event.item.addEventListener("touchend", disableDelayedDrag);
+              event.item.addEventListener("touchcancel", disableDelayedDrag);
+            },
+          });
+        };
+      }
+
+      // Add bookmark
+
+      // Assuming this is the last part of your script
+      const addField = document.getElementById("bookmarkUrl");
+      window.addmodal = function () {
+        document.getElementById("add-modal").classList.toggle("invisible");
+        document
+          .getElementById("slideover-container")
+          .classList.toggle("invisible");
+        document
+          .getElementById("slideover-bg")
+          .classList.toggle("opacity-[100]");
+        addField.focus();
+      };
+
+      bookmarkUrl.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+          e.preventDefault(); // Prevent the default action
+          addBookmark(); // Call the addBookmark function
+        }
+      });
+      // Add the event listener
+      addBookmarkButton.addEventListener("click", addBookmark);
+      function addBookmark() {
+        // bookmarkUrl.focus();
+        let url = bookmarkUrlInput.value.trim();
+        // Regular expression to check if the URL is valid
+        const urlRegex =
+          /^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)$/;
+        if (url && urlRegex.test(url)) {
+          // Prepend 'https://' if not present
+          if (!url.startsWith("https://")) {
+            url = "https://" + url;
+          }
+          const title = url
+            .replace(/^(https?:\/\/)?(www\.)?/, "")
+            .replace(/\..*$/, "");
+          bookmarks.push({ title, url });
+          localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+
+          bookmarkUrlInput.value = ""; // Clear input
+          // Clear the bookmarks container
+          bookmarksContainer.innerHTML = "";
+
+          document.getElementById("add-modal").classList.toggle("invisible");
+          document
+            .getElementById("slideover-container")
+            .classList.toggle("invisible");
+          document
+            .getElementById("slideover-bg")
+            .classList.toggle("opacity-[100]");
+
+          // Re-render the bookmarks
+          location.reload();
+        } else {
+          // Hide addTXT and show addWRN
+          document.getElementById("addTXT").style.display = "none";
+          document.getElementById("addWRN").style.display = "block";
+
+          // After 2 seconds, hide addWRN and show addTXT
+          setTimeout(function () {
+            document.getElementById("addWRN").style.display = "none";
+            document.getElementById("addTXT").style.display = "block";
+          }, 2000);
+        }
+      }
+
+      const addclearButton = document.getElementById("addclearButton");
+
+      // Hide the clear button when the input field is empty
+      addclearButton.style.display = bookmarkUrlInput.value ? "" : "none";
+
+      // Show the clear button when the user types into the input field
+      bookmarkUrlInput.addEventListener("input", () => {
+        addclearButton.style.display = bookmarkUrlInput.value ? "" : "none";
+      });
+
+      // Clear the input field and hide the clear button when the clear button is clicked
+      addclearButton.addEventListener("click", () => {
+        bookmarkUrlInput.value = "";
+        addclearButton.style.display = "none";
+      });
+
+      // Edit bookmark
+      // Define the function
+
+      editbookmarkUrl.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+          e.preventDefault(); // Prevent the default action
+          editBookmarkButton.click(); // Call the addBookmark function
+        }
+      });
+      // Add the event listener
+      bookmarksContainer.addEventListener("click", editBookmark);
+      function editBookmark(event) {
+        if (event.target.classList.contains("editBookmark")) {
+          // editbookmarkUrl.focus();
+          const index = event.target.dataset.index;
+          // Get the bookmarks from local storage
+          const bookmarks = JSON.parse(localStorage.getItem("bookmarks"));
+
+          // Get the URL of the bookmark at the given index
+          let url = bookmarks[index].url;
+
+          // Remove 'https://' from the URL for display
+          url = url.replace(/^https:\/\//, "");
+
+          // Get the input field
+          const inputField = document.getElementById("editbookmarkUrl");
+
+          // Set the URL as the value of the input field
+          inputField.value = url;
+
+          editBookmarkButton.addEventListener("click", () => {
+            const url = bookmarkUrlInput.value.trim();
+            let newUrl = inputField.value;
+            // Regular expression to check if the URL is valid
+            const urlRegex =
+              /^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)$/;
+            if (newUrl && urlRegex.test(newUrl)) {
+              // Prepend 'https://' to the URL if not present
+              if (!newUrl.startsWith("https://")) {
+                newUrl = "https://" + newUrl;
+              }
+              const newTitle = newUrl
+                .replace(/^(https?:\/\/)?(www\.)?/, "")
+                .replace(/\..*$/, "");
+              bookmarks[index].title = newTitle;
+              bookmarks[index].url = newUrl;
+              localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+              // Clear the bookmarks container
+              bookmarksContainer.innerHTML = "";
+
+              document
+                .getElementById("edit-modal")
+                .classList.toggle("invisible");
+              document
+                .getElementById("slideover-container")
+                .classList.toggle("invisible");
+              document
+                .getElementById("slideover-bg")
+                .classList.toggle("opacity-[100]");
+
+              // Re-render the bookmarks
+              location.reload();
+            } else {
+              // Hide editTXT and show editWRN
+              document.getElementById("editTXT").style.display = "none";
+              document.getElementById("editWRN").style.display = "block";
+
+              // After 2 seconds, hide editWRN and show editTXT
+              setTimeout(function () {
+                document.getElementById("editWRN").style.display = "none";
+                document.getElementById("editTXT").style.display = "block";
+              }, 2000);
+            }
+          });
+
+          document.getElementById("edit-modal").classList.toggle("invisible");
+          document
+            .getElementById("slideover-container")
+            .classList.toggle("invisible");
+          document
+            .getElementById("slideover-bg")
+            .classList.toggle("opacity-[100]");
+          inputField.focus();
+        }
+      }
+
+      const editBookmarkUrlInput = document.getElementById("editbookmarkUrl");
+      const editClearButton = document.getElementById("editClearButton");
+
+      // Hide the clear button when the input field is empty
+      editClearButton.style.display = editBookmarkUrlInput.value ? "" : "none";
+
+      // Show the clear button when the user types into the input field
+      editBookmarkUrlInput.addEventListener("input", () => {
+        editClearButton.style.display = editBookmarkUrlInput.value
+          ? ""
+          : "none";
+      });
+
+      // Clear the input field and hide the clear button when the clear button is clicked
+      editClearButton.addEventListener("click", () => {
+        editBookmarkUrlInput.value = "";
+        editClearButton.style.display = "none";
+      });
+
+      // Delete bookmark
+      bookmarksContainer.addEventListener("click", (event) => {
+        if (event.target.classList.contains("deleteBookmark")) {
+          const index = Array.from(
+            event.target.parentNode.parentNode.children
+          ).indexOf(event.target.parentNode);
+          bookmarks.splice(index, 1);
+          localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+
+          location.reload();
+          // renderBookmarks();
+        }
+      });
+
+      // Initial rendering
+      renderBookmarks();
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   changeBackground();
+      // });
+    </script>
+    <!-- <script type="module" src="/src/home-index.js"></script> -->
+
+    <!-- <script src="/src/flowbite.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <!-- ADS SOCIAL -->
+    <script
+      type="text/javascript"
+      src="//trashyepochabsorbing.com/1c/46/7e/1c467e8e5c154621932b14ee759d447b.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//trashyepochabsorbing.com/1c/46/7e/1c467e8e5c154621932b14ee759d447b.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//trashyepochabsorbing.com/1c/46/7e/1c467e8e5c154621932b14ee759d447b.js"
+    ></script>
+  </body>
+</html>
